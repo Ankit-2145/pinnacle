@@ -4,11 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-brand: #1e3a8a;
-  --color-accent-primary: #2dd4bf;
-
-  --color-bg-highlight: #f2f7fc;
-
+  --color-brand-blue: #228ae7;
   --font-workSans: var(--font-workSans);
   --font-spaceGrotesk: var(--font-spaceGrotesk);
 }
