@@ -44,14 +44,16 @@ export const Hero = () => {
                 by="word"
               >
                 Crafting awesome websites, killer designs, and powerful
-                applications that make your business stand out.
+                applications that makes your brand stand out.
               </TextAnimate>
               {/* Call-to-action buttons */}
               <div className="flex flex-wrap justify-start gap-4">
                 {/* Primary button */}
                 <AppPrimaryButton
+                  href="/contact"
                   label="Book a Free Call"
                   icon={ChevronRight}
+                  iconClassName="group-hover:translate-x-0.5"
                 />
 
                 {/* Secondary button */}

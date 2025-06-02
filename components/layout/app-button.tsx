@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface appPrimaryButtonProps {
   label: string;
+  href: string;
   icon: LucideIcon;
+  className?: string;
+  iconClassName?: string;
 }
 
 interface appSecondaryButtonProps {
@@ -14,13 +18,30 @@ interface appSecondaryButtonProps {
 
 export const AppPrimaryButton = ({
   label,
+  href,
   icon: Icon,
+  className,
+  iconClassName,
 }: appPrimaryButtonProps) => {
   return (
-    <Button className="group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-      {label}{" "}
-      <Icon className="h-4 w-4 group-hover:translate-x-1.5 transition-all" />
-    </Button>
+    <Link href={href}>
+      <Button
+        className={cn(
+          "group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2",
+          className
+        )}
+      >
+        <span className="relative overflow-hidden">
+          <div className="absolute origin-bottom transition duration-[1.125s] [transform:translateX(-150%)_skewX(9deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+            {label}
+          </div>
+          <div className="transition duration-[1.125s] [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(9deg)]">
+            {label}
+          </div>
+        </span>
+        <Icon className={cn("h-4 w-4 transition-all", iconClassName)} />
+      </Button>
+    </Link>
   );
 };
 
