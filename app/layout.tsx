@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { ReactLenis } from "lenis/react";
 import { Work_Sans, Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -34,15 +35,24 @@ export default function RootLayout({
       <body
         className={`${workSans.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
+        <ReactLenis
+          root
+          options={{
+            lerp: 0.1,
+            duration: 1.2,
+            smoothWheel: true,
+          }}
         >
-          <Navbar />
-          {children}
-        </ThemeProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            {children}
+          </ThemeProvider>
+        </ReactLenis>
       </body>
     </html>
   );
