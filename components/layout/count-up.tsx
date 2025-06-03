@@ -44,7 +44,7 @@ export default function StatsCounter() {
             <div className="h-20 flex items-end">
               {(inView || hasAnimated) && (
                 <div className="flex items-baseline border-t">
-                  <span className="text-4xl lg:text-6xl tabular-nums leading-none pt-2">
+                  <span className="text-4xl tabular-nums leading-none pt-2">
                     <CountUp
                       start={0}
                       end={stat.value}
