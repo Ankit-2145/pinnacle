@@ -5,7 +5,7 @@ export const WhatWeDoBest = () => {
   return (
     <section className="font-workSans py-24">
       <div className="max-w-6xl mx-auto">
-        <div className="text-4xl text-center text-foreground tracking-wide">
+        <div className="text-2xl md:text-4xl text-center text-foreground tracking-wide">
           Crafting Digital{" "}
           <PointerHighlight
             rectangleClassName="border-2 border-brand-blue dark:border-blue-500"
@@ -18,9 +18,9 @@ export const WhatWeDoBest = () => {
             we help brands grow.
           </p>
         </div>
-        <div className="py-16">
-          <ServicesCard />
-        </div>
+      </div>
+      <div className="py-16">
+        <ServicesCard />
       </div>
     </section>
   );
