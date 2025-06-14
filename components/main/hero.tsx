@@ -2,12 +2,12 @@
 
 import { Novatrix } from "uvcanvas";
 import { Magnetic } from "@/components/ui/magnetic";
-import { TextAnimate } from "@/components/magicui/text-animate";
+import { TextAnimate } from "@/components/ui/text-animate";
 import {
   AppPrimaryButton,
   AppSecondaryButton,
 } from "@/components/layout/app-button";
-import { Briefcase, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export const Hero = () => {
   const springOptions = { bounce: 0.1 };

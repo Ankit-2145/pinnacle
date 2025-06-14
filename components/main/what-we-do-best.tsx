@@ -1,11 +1,11 @@
-import { ServicesCard } from "@/components/layout/services-card";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
+import { ServicesBentoGrid } from "@/components/layout/services-bento-grid";
 
 export const WhatWeDoBest = () => {
   return (
     <section className="font-workSans py-24">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-2xl md:text-4xl text-center text-foreground tracking-wide">
+      <div className="">
+        <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
           Crafting Digital{" "}
           <PointerHighlight
             rectangleClassName="border-2 border-brand-blue dark:border-blue-500"
@@ -19,8 +19,8 @@ export const WhatWeDoBest = () => {
           </p>
         </div>
       </div>
-      <div className="py-16">
-        <ServicesCard />
+      <div className="py-16 mx-4">
+        <ServicesBentoGrid />
       </div>
     </section>
   );

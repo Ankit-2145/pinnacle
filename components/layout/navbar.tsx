@@ -30,14 +30,14 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-xl mx-auto items-center justify-between px-4">
         {/* Logo */}
         <a
           href="/"
           className="flex items-center space-x-2 transition-opacity hover:opacity-80"
         >
-          <span className="text-xl font-bold tracking-tight text-primary">
+          <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">
             Pinnacle
           </span>
         </a>
