@@ -47,41 +47,50 @@ export const ServicesBentoGrid = () => {
       {/* SEO & PERFORMANCE OPTIMIZATION */}
       <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-xl col-span-1 lg:row-span-2 w-full flex flex-col group overflow-hidden relative h-full p-6"
+  dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
+  rounded-xl col-span-1 lg:row-span-2 w-full flex flex-col group overflow-hidden relative h-full p-6 space-y-5"
       >
         <div className="bg-orange-600 dark:bg-orange-400 p-2 w-fit rounded-xl text-white">
           <Search className="h-4 w-4" />
         </div>
-        <h2 className="text-lg font-medium text-orange-600 dark:text-orange-400 mt-4">
+
+        <h2 className="text-lg font-medium text-orange-600 dark:text-orange-400">
           SEO & Performance Optimization
         </h2>
-        <p className="text-sm text-muted-foreground max-w-sm mt-4 mb-2">
+
+        <p className="text-sm text-muted-foreground max-w-sm">
           Because what&apos;s the point of a stunning site if no one finds it?
           We fix that — with SEO that ranks, speed that sticks, and strategy
           that actually works.
         </p>
-        <SEOCardSearch />
+
+        <div className="my-auto">
+          <SEOCardSearch />
+        </div>
       </div>
 
       {/* UI/UX DESIGN */}
       <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] 
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-xl col-span-1 lg:row-span-2 w-full flex flex-col group overflow-hidden relative h-full p-6"
+  dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
+  rounded-xl col-span-1 lg:row-span-2 w-full flex flex-col group overflow-hidden relative h-full p-6 space-y-5"
       >
         <div className="bg-pink-600 dark:bg-pink-400 p-2 w-fit rounded-xl text-white">
           <Palette className="h-4 w-4" />
         </div>
 
-        <h2 className="text-lg font-medium text-pink-600 dark:text-pink-400 mt-4">
+        <h2 className="text-lg font-medium text-pink-600 dark:text-pink-400">
           UI/UX Design
         </h2>
-        <p className="text-sm text-muted-foreground max-w-sm mt-4">
+
+        <p className="text-sm text-muted-foreground max-w-sm">
           Looks matter — but so does making sense. We design interfaces that not
           only wow users but actually help them get stuff done.
         </p>
-        <Connect />
+
+        <div className="mt-auto">
+          <Connect />
+        </div>
       </div>
 
       {/* MOBILE DEVELOPMENT */}
@@ -104,7 +113,7 @@ export const ServicesBentoGrid = () => {
       </div>
 
       {/* E-COMMERCE DEVELOPMENT */}
-      <div
+      {/* <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
       rounded-xl col-span-1  w-full flex flex-col group overflow-hidden relative h-full p-6"
@@ -120,25 +129,7 @@ export const ServicesBentoGrid = () => {
           e-commerce stores that are fast, fuss-free, and actually make you
           money — not migraines.
         </p>
-      </div>
-
-      {/* WEBSITE MAINTAINANCE & SUPPORT */}
-      <div
-        className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
-      >
-        <div className="bg-cyan-600 dark:bg-cyan-400 p-2 w-fit rounded-xl text-white">
-          <Settings className="h-4 w-4" />
-        </div>
-        <h2 className="text-lg font-medium text-cyan-600 dark:text-cyan-400 mt-4">
-          Website Maintenance & Support
-        </h2>
-        <p className="text-sm text-muted-foreground max-w-sm mt-4">
-          Set it and forget it? Not quite. We handle the boring-but-crucial
-          stuff — updates, security, and fixes — so your site doesn&apos;t
-          randomly break on a Tuesday.
-        </p>
-      </div>
+      </div> */}
 
       {/* CUSTOM SOFTWARE SOLUTIONS */}
       <div
@@ -159,8 +150,28 @@ export const ServicesBentoGrid = () => {
         </p>
       </div>
 
-      {/* CMS DEVELOPMENT */}
+      {/* WEBSITE MAINTAINANCE & SUPPORT */}
       <div
+        className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
+      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
+      >
+        <div className="max-w-xs">
+          <div className="bg-cyan-600 dark:bg-cyan-400 p-2 w-fit rounded-xl text-white">
+            <Settings className="h-4 w-4" />
+          </div>
+          <h2 className="text-lg font-medium text-cyan-600 dark:text-cyan-400 mt-4">
+            Website Maintenance & Support
+          </h2>
+          <p className="text-sm text-muted-foreground max-w-sm mt-4">
+            Set it and forget it? Not quite. We handle the boring-but-crucial
+            stuff — updates, security, and fixes — so your site doesn&apos;t
+            randomly break on a Tuesday.
+          </p>
+        </div>
+      </div>
+
+      {/* CMS DEVELOPMENT */}
+      {/* <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
       rounded-md col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
@@ -176,10 +187,10 @@ export const ServicesBentoGrid = () => {
           setups that put you in control — update, scale, and manage content
           without the tech headaches.
         </p>
-      </div>
+      </div> */}
 
       {/* BRANDING & CREATIVE DIRECTION */}
-      <div
+      {/* <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
       rounded-md col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
@@ -195,7 +206,7 @@ export const ServicesBentoGrid = () => {
           help you look sharp, stay consistent, and actually make people
           remember you (for the right reasons).
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -98,10 +98,7 @@ interface TerminalProps {
 
 export const SearchPage = ({ children, className }: TerminalProps) => {
   return (
-    <div
-      className={cn("z-0 h-full max-h-[400px] w-full bg-background", className)}
-    >
-      <div className="flex flex-col gap-y-2"></div>
+    <div className={cn("z-0 h-full w-full bg-background", className)}>
       <div className="">
         <div className="grid gap-y-1 overflow-auto">{children}</div>
       </div>

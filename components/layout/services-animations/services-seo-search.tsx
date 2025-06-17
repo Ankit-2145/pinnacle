@@ -9,7 +9,7 @@ export function SEOCardSearch() {
   return (
     <SearchPage>
       <div
-        className="flex items-center gap-2 p-2 mt-4 m-0.5 dark:bg-gray-50/[.10] rounded-full text-sm text-muted-foreground font-workSans
+        className="flex items-center gap-2 p-2 dark:bg-gray-50/[.10] rounded-full text-sm text-muted-foreground font-workSans
       shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       "
       >
@@ -53,11 +53,11 @@ export function SEOCardSearch() {
               <span className="font-medium text-orange-600 dark:text-orange-400">
                 Your Website
               </span>{" "}
-              drives actual traffic now
+              ranks better and loads faster
             </span>
             <span className="text-xs">
-              Not paid ads, not bots. Just clean SEO that brings in organic
-              visitors who convert.
+              We fix slow, unseen, underperforming websites with SEO and
+              performance that actually deliver.
             </span>
           </div>
         </AnimatedSpan>
