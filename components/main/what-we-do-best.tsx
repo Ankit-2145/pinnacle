@@ -4,7 +4,7 @@ import { ServicesBentoGrid } from "@/components/layout/services-bento-grid";
 export const WhatWeDoBest = () => {
   return (
     <section className="font-workSans py-24">
-      <div className="">
+      <div>
         <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
           Crafting Digital{" "}
           <PointerHighlight
@@ -13,13 +13,13 @@ export const WhatWeDoBest = () => {
           >
             <span className="relative z-10">Excellence</span>
           </PointerHighlight>
-          <p className="text-muted-foreground text-base pt-2">
+          <p className="text-muted-foreground text-base pt-4">
             From sleek websites to robust applications <br />— here&apos;s how
             we help brands grow.
           </p>
         </div>
       </div>
-      <div className="py-16 mx-4">
+      <div className="pt-16 mx-4">
         <ServicesBentoGrid />
       </div>
     </section>

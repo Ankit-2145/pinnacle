@@ -1,4 +1,4 @@
-import { ArrowRight, Lightbulb } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import StatsCounter from "@/components/layout/count-up";
 import { AppPrimaryButton } from "@/components/layout/app-button";
 

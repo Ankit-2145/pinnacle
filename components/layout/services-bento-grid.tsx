@@ -2,13 +2,10 @@
 
 import React from "react";
 import {
-  Code,
-  FileText,
   Globe,
   Palette,
   Search,
   Settings,
-  ShoppingCart,
   Smartphone,
   Sparkles,
 } from "lucide-react";
@@ -112,41 +109,22 @@ export const ServicesBentoGrid = () => {
         </p>
       </div>
 
-      {/* E-COMMERCE DEVELOPMENT */}
-      {/* <div
-        className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-xl col-span-1  w-full flex flex-col group overflow-hidden relative h-full p-6"
-      >
-        <div className="bg-amber-600 dark:bg-amber-400 p-2 w-fit rounded-xl text-white">
-          <ShoppingCart className="h-4 w-4" />
-        </div>
-        <h2 className="text-lg font-medium text-amber-600 dark:text-amber-400 mt-4">
-          E-commerce Development
-        </h2>
-        <p className="text-sm text-muted-foreground max-w-sm mt-4">
-          Selling online shouldn&apos;t feel like rocket science. We build
-          e-commerce stores that are fast, fuss-free, and actually make you
-          money — not migraines.
-        </p>
-      </div> */}
-
-      {/* CUSTOM SOFTWARE SOLUTIONS */}
+      {/* BRANDING & CREATIVE DIRECTION */}
       <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-md col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
+      rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
       >
-        <div className="bg-blue-600 dark:bg-blue-400 p-2 w-fit rounded-xl text-white">
-          <Code className="h-4 w-4" />
+        <div className="bg-purple-600 dark:bg-purple-400 p-2 w-fit rounded-xl text-white">
+          <Sparkles className="h-4 w-4" />
         </div>
-        <h2 className="text-lg font-medium text-blue-600 dark:text-blue-400 mt-4">
-          Custom Software Solutions
+        <h2 className="text-lg font-medium text-purple-600 dark:text-purple-400 mt-4">
+          Branding & Creative Direction
         </h2>
         <p className="text-sm text-muted-foreground max-w-sm mt-4">
-          Can&apos;t find a tool that does exactly what you need? We&apos;ll
-          just build it — custom software that actually fits your business
-          instead of forcing you to work around it.
+          Your logo isn&apos;t your brand — but a bad one will haunt you. We
+          help you look sharp, stay consistent, and actually make people
+          remember you (for the right reasons).
         </p>
       </div>
 
@@ -162,51 +140,13 @@ export const ServicesBentoGrid = () => {
           <h2 className="text-lg font-medium text-cyan-600 dark:text-cyan-400 mt-4">
             Website Maintenance & Support
           </h2>
-          <p className="text-sm text-muted-foreground max-w-sm mt-4">
+          <p className="text-sm text-muted-foreground max-w-sm my-4">
             Set it and forget it? Not quite. We handle the boring-but-crucial
             stuff — updates, security, and fixes — so your site doesn&apos;t
             randomly break on a Tuesday.
           </p>
         </div>
       </div>
-
-      {/* CMS DEVELOPMENT */}
-      {/* <div
-        className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-md col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
-      >
-        <div className="bg-teal-600 dark:bg-teal-400 p-2 w-fit rounded-xl text-white">
-          <FileText className="h-4 w-4" />
-        </div>
-        <h2 className="text-lg font-medium text-teal-600 dark:text-teal-400 mt-4">
-          CMS Development
-        </h2>
-        <p className="text-sm text-muted-foreground max-w-sm mt-4">
-          Still bugging your developer to change a headline? Stop. We build CMS
-          setups that put you in control — update, scale, and manage content
-          without the tech headaches.
-        </p>
-      </div> */}
-
-      {/* BRANDING & CREATIVE DIRECTION */}
-      {/* <div
-        className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-md col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-6"
-      >
-        <div className="bg-purple-600 dark:bg-purple-400 p-2 w-fit rounded-xl text-white">
-          <Sparkles className="h-4 w-4" />
-        </div>
-        <h2 className="text-lg font-medium text-purple-600 dark:text-purple-400 mt-4">
-          Branding & Creative Direction
-        </h2>
-        <p className="text-sm text-muted-foreground max-w-sm mt-4">
-          Your logo isn&apos;t your brand — but a bad one will haunt you. We
-          help you look sharp, stay consistent, and actually make people
-          remember you (for the right reasons).
-        </p>
-      </div> */}
     </div>
   );
 };

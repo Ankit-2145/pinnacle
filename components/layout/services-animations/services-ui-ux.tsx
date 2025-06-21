@@ -1,14 +1,11 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useAnimate } from "framer-motion";
 
-import { Button, buttonVariants } from "@/components/ui/button";
-
 import { HighlighterItem, HighlightGroup } from "@/components/ui/highlighter";
-import { DotPattern } from "@/components/magicui/dot-pattern";
+import { DotPattern } from "@/components/ui/dot-pattern";
 
 export function Connect() {
   const [scope, animate] = useAnimate();
