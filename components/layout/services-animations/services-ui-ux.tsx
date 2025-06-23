@@ -7,7 +7,7 @@ import { useAnimate } from "framer-motion";
 import { HighlighterItem, HighlightGroup } from "@/components/ui/highlighter";
 import { DotPattern } from "@/components/ui/dot-pattern";
 
-export function Connect() {
+export const Connect = () => {
   const [scope, animate] = useAnimate();
 
   React.useEffect(() => {
@@ -120,4 +120,4 @@ export function Connect() {
       </HighlightGroup>
     </section>
   );
-}
+};

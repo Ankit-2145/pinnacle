@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
@@ -33,14 +34,14 @@ export const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-xl mx-auto items-center justify-between px-4">
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className="flex items-center space-x-2 transition-opacity hover:opacity-80"
         >
           <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">
             Pinnacle
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-8 font-workSans">
@@ -51,7 +52,7 @@ export const Navbar = () => {
               pathname.startsWith(`${item.href}/`);
 
             return (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className={cn(
@@ -63,7 +64,7 @@ export const Navbar = () => {
                 {isActive && (
                   <span className="absolute inset-x-4 -bottom-px h-px bg-gradient-to-r from-brand-blue/40 via-brand-blue to-brand-blue/40 transition-opacity group-hover:opacity-100" />
                 )}
-              </a>
+              </Link>
             );
           })}
         </div>
@@ -101,7 +102,7 @@ export const Navbar = () => {
                       pathname.startsWith(`${item.href}/`);
 
                     return (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={cn(
@@ -111,7 +112,7 @@ export const Navbar = () => {
                         onClick={() => setIsOpen(false)}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     );
                   })}
                 </div>

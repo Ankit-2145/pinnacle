@@ -77,9 +77,9 @@ const WebCard = ({
   );
 };
 
-export function MarqueeVertical() {
+export const MarqueeVertical = () => {
   return (
-    <div className="relative flex h-[210px] w-full flex-row items-center justify-center overflow-hidden">
+    <div className="relative flex h-[210px] w-full flex-row items-center justify-center overflow-hidden pointer-events-none">
       <Marquee vertical className="[--duration:20s]">
         {firstRow.map((review) => (
           <WebCard
@@ -104,4 +104,4 @@ export function MarqueeVertical() {
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
     </div>
   );
-}
+};

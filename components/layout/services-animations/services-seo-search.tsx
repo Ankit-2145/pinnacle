@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/search-page";
 import { Search } from "lucide-react";
 
-export function SEOCardSearch() {
+export const SEOCardSearch = () => {
   return (
     <SearchPage>
       <div
@@ -64,4 +64,4 @@ export function SEOCardSearch() {
       </div>
     </SearchPage>
   );
-}
+};
