@@ -1,5 +1,6 @@
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { ServicesBentoGrid } from "@/components/layout/services-bento-grid";
+import { CTAButton } from "@/components/layout/cta-button";
 
 export const WhatWeDoBest = () => {
   return (
@@ -21,6 +22,9 @@ export const WhatWeDoBest = () => {
       </div>
       <div className="pt-16 mx-4">
         <ServicesBentoGrid />
+      </div>
+      <div className="flex justify-center items-center pt-16">
+        <CTAButton />
       </div>
     </section>
   );

@@ -1,78 +1,64 @@
 "use client";
 
+import { DotPattern } from "@/components/ui/dot-pattern";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 interface TimelineStep {
   id: number;
   title: string;
-  emoji: string;
-  description: string;
-  color: string;
 }
 
 const timelineSteps: TimelineStep[] = [
   {
     id: 1,
-    title: "Sketch",
-    emoji: "✏️",
-    description: "Initial concept & wireframes",
-    color: "#f97316", // orange-500
+    title: "Wireframe",
   },
   {
     id: 2,
-    title: "Mockup",
-    emoji: "🎨",
-    description: "Visual design & prototypes",
-    color: "#a855f7", // purple-500
+    title: "Design",
   },
   {
     id: 3,
     title: "Code",
-    emoji: "💻",
-    description: "Development & implementation",
-    color: "#3b82f6", // blue-500
   },
   {
     id: 4,
-    title: "Timeline",
-    emoji: "📅",
-    description: "Project planning & milestones",
-    color: "#22c55e", // green-500
+    title: "Test",
   },
   {
     id: 5,
-    title: "Success",
-    emoji: "👍",
-    description: "Project completed & approved",
-    color: "#10b981", // emerald-500
+    title: "Launch",
   },
 ];
 
-export const TimelineWorkflow = () => {
+export const ProcessTimelineWorkflow = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
-    if (!isPlaying) return;
-
     const interval = setInterval(() => {
       setCurrentStep((prev) => (prev + 1) % timelineSteps.length);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [isPlaying]);
+  }, []);
 
   const progressPercentage = ((currentStep + 1) / timelineSteps.length) * 100;
 
   return (
     <div className="w-full h-full flex flex-col justify-center">
       {/* Timeline Container */}
-      <div className="relative flex-1 flex flex-col justify-center max-w-4xl mx-auto w-full">
+      <div className="relative flex-1 flex flex-col justify-center p-4 max-w-4xl mx-auto w-full">
+        <DotPattern
+          className={cn(
+            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)] mt-4"
+          )}
+        />
         {/* Timeline Line with SVG */}
         <div className="relative">
           <svg
-            className="absolute top-1/2 left-0 w-full h-2 -translate-y-1/2"
+            className="absolute hidden lg:block top-1/2 left-0 w-full h-2 -translate-y-1/2"
             viewBox="0 0 100 8"
             preserveAspectRatio="none"
           >
@@ -118,13 +104,13 @@ export const TimelineWorkflow = () => {
           </svg>
 
           {/* Timeline Steps */}
-          <div className="relative flex justify-between items-center">
+          <div className="relative flex flex-wrap gap-2 lg:gap-0 justify-between items-center pt-2">
             {timelineSteps.map((step, index) => (
               <div key={step.id} className="flex flex-col items-center group">
                 {/* Step Circle */}
                 <motion.div
-                  className="relative bg-foreground rounded-lg gap-1.5 px-4 py-2 flex items-center justify-center z-10 cursor-pointer transition-all duration-300"
-                  initial={{ scale: 0.8, opacity: 0.5 }}
+                  className="relative bg-foreground rounded-lg gap-1.5 px-2.5 py-1.5 flex items-center justify-center z-10 cursor-pointer transition-all duration-300"
+                  initial={{ scale: 0.8, opacity: 0 }}
                   animate={{
                     scale:
                       index === currentStep
@@ -136,8 +122,6 @@ export const TimelineWorkflow = () => {
                   }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
                   onClick={() => setCurrentStep(index)}
-                  whileHover={{ scale: index <= currentStep ? 1.05 : 0.95 }}
-                  whileTap={{ scale: 0.95 }}
                 >
                   <motion.span
                     initial={{ scale: 0.8 }}
