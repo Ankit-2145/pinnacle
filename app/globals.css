@@ -156,3 +156,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes skew-scroll {
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.skew-scroll {
+  animation: skew-scroll 20s linear infinite;
+}

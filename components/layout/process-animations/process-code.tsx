@@ -3,11 +3,7 @@
 import { CodeBlock, CodeBlockCode } from "@/components/ui/code-editor";
 
 export const CodeBlockWithHeader = () => {
-  const code = `"use client";
-
-import { SignInButton } from "@/auth/sign";
-
-export const Login = () => {
+  const code = `export const Login = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <SignInButton mode="modal">
@@ -17,7 +13,7 @@ export const Login = () => {
       </SignInButton>
       <UserButton/>
     </div>
-)};
+    )};
 `;
 
   return (

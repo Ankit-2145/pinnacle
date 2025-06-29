@@ -9,7 +9,7 @@ export const About = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           <div>
             <h2 className="text-lg text-foreground tracking-wide uppercase">
-              We don't just design.
+              We don&apos;t just design.
               <br />
               we deconstruct problems.
             </h2>

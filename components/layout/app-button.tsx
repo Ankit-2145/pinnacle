@@ -39,7 +39,12 @@ export const AppPrimaryButton = ({
             {label}
           </div>
         </span>
-        <Icon className={cn("h-4 w-4 transition-all", iconClassName)} />
+        <Icon
+          className={cn(
+            "h-4 w-4 group-hover:translate-x-1 transition-transform",
+            iconClassName
+          )}
+        />
       </Button>
     </Link>
   );

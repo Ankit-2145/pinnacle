@@ -41,7 +41,7 @@ const reviews = [
   },
   {
     name: "Prisma",
-    img: "./prisma.svg",
+    img: "./prisma.png",
   },
 ];
 
@@ -100,8 +100,8 @@ export const MarqueeVertical = () => {
         ))}
       </Marquee>
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/12 bg-gradient-to-b from-background"></div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/12 bg-gradient-to-t from-background"></div>
     </div>
   );
 };

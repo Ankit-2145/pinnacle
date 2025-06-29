@@ -1,7 +1,7 @@
 "use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 interface Message {
   id: string;
@@ -108,9 +108,8 @@ export const ProcessChat = () => {
                 viewport={{ once: true }}
               >
                 <Avatar className="w-6 h-6 bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 flex-shrink-0">
-                  <AvatarImage src="/client.jpg" />
-                  <AvatarFallback className="bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 text-white text-xs">
-                    C
+                  <AvatarFallback className="bg-gray-100 border border-brand-blue text-brand-blue text-xs font-semibold">
+                    U
                   </AvatarFallback>
                 </Avatar>
               </motion.div>

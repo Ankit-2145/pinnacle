@@ -1,7 +1,7 @@
 import { ProcessChat } from "./process-chat";
 import { CodeBlockWithHeader } from "./process-code";
+import { ProcessTiltedScroll } from "./process-design";
 import { ProcessLaunch } from "./process-launch";
-// import { DesignTransformation } from "./process-design";
 import { ProcessTimelineWorkflow } from "./process-workflow";
 
 export default function ProcessCards() {
@@ -37,7 +37,7 @@ export default function ProcessCards() {
           we&apos;re planning a heist — except instead of stealing, we deliver a
           clean, functional, and fast web experience.
         </p>
-        <ProcessTimelineWorkflow />
+        <ProcessTiltedScroll />
       </div>
 
       <div
@@ -49,13 +49,13 @@ export default function ProcessCards() {
           <h2 className="text-lg font-medium text-foreground">
             03. Design That Doesn&apos;t Make You Cry
           </h2>
-          <p className="max-w-xs text-sm text-muted-foreground mt-4">
+          <p className="lg:max-w-sm text-sm text-muted-foreground mt-4">
             No generic templates. No “Oops, I copied this from 2012.” Just
             clean, modern, user-focused designs your customers will love (and
             your competitors will screenshot).
           </p>
         </div>
-        {/* <DesignTransformation /> */}
+        <ProcessTimelineWorkflow />
       </div>
 
       <div

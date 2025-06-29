@@ -19,6 +19,7 @@ export const AnimatedSpan = ({
   <motion.div
     initial={{ opacity: 0, y: -5 }}
     whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.3, delay: delay / 1000 }}
     className={cn("grid text-sm font-normal tracking-tight", className)}
     {...props}
