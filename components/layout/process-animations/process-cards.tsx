@@ -83,9 +83,10 @@ export default function ProcessCards() {
           05. Launch, Celebrate, Support
         </h2>
         <p className="text-sm text-muted-foreground mt-4">
-          We launch with confidence (no “it works on my machine” here), toss
-          some virtual confetti, and — shocker — we don&apos;t disappear after
-          delivery. Support? Yeah, we actually do that.
+          We don&apos;t just hit “deploy” and disappear into the void. We stick
+          around, fix bugs, answer your late-night questions, and make sure
+          everything runs smoother. Because, shockingly, support is part of the
+          job.
         </p>
         <ProcessLaunch />
       </div>
