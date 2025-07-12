@@ -1,4 +1,3 @@
-import React from "react";
 import { FAQQuestions } from "../layout/faq-animations/faq-questions";
 
 const FAQs = () => {
@@ -13,7 +12,7 @@ const FAQs = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="pt-16 lg:pt-0">
           <FAQQuestions />
         </div>
       </div>

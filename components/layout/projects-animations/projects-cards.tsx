@@ -194,7 +194,7 @@ export const ProjectsCards = () => {
                     range={200}
                   >
                     <Button className="group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      See It in Action <ExternalLink className="w-4 h-4" />
+                      View Live <ExternalLink className="w-4 h-4" />
                     </Button>
                   </Magnetic>
                 </a>
@@ -206,7 +206,7 @@ export const ProjectsCards = () => {
                     range={200}
                   >
                     <Button className="group text-blue-500 dark:text-blue-500 bg-transparent hover:bg-transparent border border-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      Case Study <Book className="w-4 h-4" />
+                      View Case Study <Book className="w-4 h-4" />
                     </Button>
                   </Magnetic>
                 </Link>
