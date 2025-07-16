@@ -1,7 +1,5 @@
-import { CheckIcon, ChevronRight } from "lucide-react";
-import { CTAButton } from "../cta-button";
+import { CheckIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AppPrimaryButton } from "../app-button";
 
 export const PricingCards = () => {
   // Pricing plan data
