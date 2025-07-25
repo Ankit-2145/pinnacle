@@ -1,10 +1,11 @@
-import { About } from "@/components/main/about";
-import FAQs from "@/components/main/faq";
 import { Hero } from "@/components/main/hero";
-import { OurProcess } from "@/components/main/our-process";
-import OurProjects from "@/components/main/our-projects";
+import { About } from "@/components/main/about";
 import { OurServices } from "@/components/main/our-services";
-import Pricing from "@/components/main/pricing";
+import { OurProcess } from "@/components/main/our-process";
+import { OurProjects } from "@/components/main/our-projects";
+import { Pricing } from "@/components/main/pricing";
+import { FAQs } from "@/components/main/faq";
+import { Testimonials } from "@/components/main/testimonials";
 // import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 export default function Main() {
@@ -18,6 +19,7 @@ export default function Main() {
       <OurProjects />
       <Pricing />
       <FAQs />
+      <Testimonials />
     </main>
   );
 }

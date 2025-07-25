@@ -1,6 +1,6 @@
-import { FAQQuestions } from "../layout/faq-animations/faq-questions";
+import { FAQQuestions } from "../layout/faq/faq-questions";
 
-const FAQs = () => {
+export const FAQs = () => {
   return (
     <section className="font-workSans py-24">
       <div className="max-w-7xl mx-4 2xl:mx-auto grid grid-cols-1 lg:grid-cols-2">
@@ -19,5 +19,3 @@ const FAQs = () => {
     </section>
   );
 };
-
-export default FAQs;

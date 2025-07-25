@@ -1,16 +1,14 @@
-import { ProjectsCards } from "@/components/layout/projects/projects-cards";
-
-export const OurProjects = () => {
+export const Testimonials = () => {
   return (
     <section className="font-workSans py-24">
       <div>
         <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
-          <h1>What We&apos;ve Actually Shipped</h1>
+          <h1>Turns Out, People Like Working With Us</h1>
           <p className="text-muted-foreground text-base pt-4">
-            Not just Design mockups — real users, real deadlines, real launches.
+            Because delivering great work isn&apos;t optional — it&apos;s
+            expected.
           </p>
         </div>
-        <ProjectsCards />
       </div>
     </section>
   );

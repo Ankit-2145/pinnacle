@@ -1,5 +1,5 @@
-import { ProcessPillars } from "@/components/layout/process-animations/process-pillars";
-import ProcessCards from "@/components/layout/process-animations/process-cards";
+import { ProcessPillars } from "@/components/layout/process/process-pillars";
+import ProcessCards from "@/components/layout/process/process-cards";
 
 export const OurProcess = () => {
   return (

@@ -1,6 +1,6 @@
-import { PricingCards } from "../layout/pricing-animations/pricing-cards";
+import { PricingCards } from "../layout/pricing/pricing-cards";
 
-const Pricing = () => {
+export const Pricing = () => {
   return (
     <section className="font-workSans py-24">
       <div>
@@ -16,5 +16,3 @@ const Pricing = () => {
     </section>
   );
 };
-
-export default Pricing;
