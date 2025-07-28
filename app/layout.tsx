@@ -5,6 +5,7 @@ import { Work_Sans, Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer/footer";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -51,6 +52,7 @@ export default function RootLayout({
           >
             <Navbar />
             {children}
+            <Footer />
           </ThemeProvider>
         </ReactLenis>
       </body>
