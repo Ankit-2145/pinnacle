@@ -1,10 +1,10 @@
+import { ArrowRight } from "lucide-react";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
-import { ServicesBentoGrid } from "@/components/layout/services-bento-grid";
+import { ServicesBentoGrid } from "@/components/layout/services/services-bento-grid";
 import {
   AppPrimaryButton,
   AppSecondaryButton,
 } from "@/components/layout/app-button";
-import { ArrowRight } from "lucide-react";
 
 export const OurServices = () => {
   return (

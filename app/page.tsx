@@ -6,6 +6,7 @@ import { OurProjects } from "@/components/main/our-projects";
 import { Pricing } from "@/components/main/pricing";
 import { FAQs } from "@/components/main/faq";
 import { Testimonials } from "@/components/main/testimonials";
+import { CTA } from "@/components/main/cta";
 // import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 export default function Main() {
@@ -20,6 +21,7 @@ export default function Main() {
       <Pricing />
       <FAQs />
       <Testimonials />
+      <CTA />
     </main>
   );
 }

@@ -9,9 +9,9 @@ import {
   Smartphone,
   Sparkles,
 } from "lucide-react";
-import { MarqueeVertical } from "./services/services-marquee";
-import { SEOCardSearch } from "./services/services-seo-search";
-import { Connect } from "./services/services-ui-ux";
+import { MarqueeVertical } from "./services-marquee";
+import { SEOCardSearch } from "./services-seo-search";
+import { Connect } from "./services-ui-ux";
 
 export const ServicesBentoGrid = () => {
   return (

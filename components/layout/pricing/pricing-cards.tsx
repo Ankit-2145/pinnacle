@@ -1,5 +1,5 @@
-import { CheckIcon, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { AppPrimaryButton } from "../app-button";
+import { ArrowRight, CheckIcon } from "lucide-react";
 
 export const PricingCards = () => {
   // Pricing plan data
@@ -92,12 +92,12 @@ export const PricingCards = () => {
                 </div>
               </div>
               <hr />
-              <div className="flex justify-center items-center w-full">
-                <Button className="group w-full text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                  Book a call{" "}
-                  <ChevronRight className="h-4 w-4 group-hover:translate-x-1.5 transition-all" />
-                </Button>
-              </div>
+              <AppPrimaryButton
+                label="Book a Call"
+                href="/services"
+                icon={ArrowRight}
+                className="w-full"
+              />
             </div>
           </div>
         ))}
