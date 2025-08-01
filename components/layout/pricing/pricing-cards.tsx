@@ -52,12 +52,12 @@ export const PricingCards = () => {
 
   return (
     <div className="flex items-center justify-center w-full mx-auto pt-16">
-      <div className="flex flex-col lg:flex-row justify-between mx-4 flex-wrap max-w-6xl gap-8">
+      <div className="flex flex-col lg:flex-row justify-between mx-4 flex-wrap max-w-7xl gap-8">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
             className="overflow-hidden flex-1 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] "
+      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
           >
             <div className="p-[30px] flex flex-col h-full gap-6 justify-between font-workSans">
               <div className="flex flex-col gap-6">

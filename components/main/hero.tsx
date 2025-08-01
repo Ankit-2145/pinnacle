@@ -1,13 +1,13 @@
 "use client";
 
+import { ChevronRight } from "lucide-react";
+import Iridescence from "../iridescence";
 import { Magnetic } from "@/components/ui/magnetic";
 import { TextAnimate } from "@/components/ui/text-animate";
 import {
   AppPrimaryButton,
   AppSecondaryButton,
 } from "@/components/layout/app-button";
-import { ChevronRight } from "lucide-react";
-import Iridescence from "../iridescence";
 
 export const Hero = () => {
   const springOptions = { bounce: 0.1 };

@@ -15,7 +15,7 @@ export function TestimonialsCards({ testimonials }: TestimonialsCardsProps) {
   return (
     <section className="w-full pt-16 font-workSans">
       <div className="px-4 md:px-6">
-        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
           {testimonials.map((t, i) => {
             const initials = t.name
               .split(" ")
@@ -26,13 +26,9 @@ export function TestimonialsCards({ testimonials }: TestimonialsCardsProps) {
             return (
               <Card
                 key={i}
-                className="relative flex flex-col h-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+                className="relative flex flex-col h-full duration-300 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
+      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
               >
-                {/* Quote icon */}
-                <div className="absolute top-6 right-6 opacity-10">
-                  <Quote className="h-12 w-12 text-primary" />
-                </div>
-
                 <CardContent className="p-4">
                   <div className="relative">
                     <p className="text-muted-foreground leading-relaxed text-base relative z-10">
@@ -53,8 +49,6 @@ export function TestimonialsCards({ testimonials }: TestimonialsCardsProps) {
                         {t.name}
                       </p>
                     </div>
-                    {/* Decorative element */}
-                    <div className="h-px bg-gradient-to-r from-primary/20 to-transparent flex-1 ml-4" />
                   </div>
                 </CardFooter>
               </Card>
