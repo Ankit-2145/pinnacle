@@ -19,6 +19,7 @@ const eslintConfig = [
       "@typescript-eslint/no-require-imports": "off",
       "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
       "no-var": "off", // <-- Turn off 'any' error (globally)
+      "prefer-const": "off",
     },
   },
 ];

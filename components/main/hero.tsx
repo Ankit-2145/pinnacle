@@ -1,6 +1,5 @@
 "use client";
 
-import { Novatrix } from "uvcanvas";
 import { Magnetic } from "@/components/ui/magnetic";
 import { TextAnimate } from "@/components/ui/text-animate";
 import {
@@ -8,6 +7,7 @@ import {
   AppSecondaryButton,
 } from "@/components/layout/app-button";
 import { ChevronRight } from "lucide-react";
+import Iridescence from "../iridescence";
 
 export const Hero = () => {
   const springOptions = { bounce: 0.1 };
@@ -71,7 +71,12 @@ export const Hero = () => {
         </div>
         {/* Velustro Gradient Animation */}
         <div className="mt-10 max-w-6xl mx-auto h-64 md:h-96 overflow-hidden rounded-md">
-          <Novatrix />
+          <Iridescence
+            color={[1, 1, 1]}
+            mouseReact={false}
+            amplitude={0.1}
+            speed={1.0}
+          />
         </div>
       </section>
     </>

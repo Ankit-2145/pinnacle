@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+import { AppPrimaryButton, AppSecondaryButton } from "../layout/app-button";
 import { PricingCards } from "../layout/pricing/pricing-cards";
 
 export const Pricing = () => {
@@ -12,6 +14,30 @@ export const Pricing = () => {
           </p>
         </div>
         <PricingCards />
+        <div className="mt-20 text-center mx-4">
+          <div className="max-w-2xl mx-auto space-y-6">
+            <div className="space-y-3">
+              <h3 className="text-xl md:text-2xl text-foreground">
+                Worried about the budget? Let&apos;s still talk.
+              </h3>
+              <p className="text-muted-foreground">
+                We understand that every project comes with its own constraints.
+                If our pricing doesn&apos;t quite align with your budget — no
+                pressure. We&apos;re always open to a conversation and happy to
+                explore options that work for both sides.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-center gap-4">
+              <AppPrimaryButton
+                label="Book a Free Call"
+                href="/pricing"
+                icon={ArrowRight}
+              />
+              <AppSecondaryButton label="Drop a Message" href="/contact" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

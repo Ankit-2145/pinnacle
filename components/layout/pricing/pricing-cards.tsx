@@ -6,7 +6,7 @@ export const PricingCards = () => {
   const pricingPlans = [
     {
       title: "Starter Website",
-      priceINR: "5,999",
+      priceINR: "9,999",
       description:
         "Perfect for professionals or local businesses who need a fast, clean online presence.",
       features: [
@@ -91,13 +91,6 @@ export const PricingCards = () => {
                   ))}
                 </div>
               </div>
-              <hr />
-              <AppPrimaryButton
-                label="Book a Call"
-                href="/services"
-                icon={ArrowRight}
-                className="w-full"
-              />
             </div>
           </div>
         ))}
