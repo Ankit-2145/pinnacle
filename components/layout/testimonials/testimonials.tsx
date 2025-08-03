@@ -1,6 +1,5 @@
 import { Card, CardFooter, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Quote } from "lucide-react";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export interface Testimonial {
   name: string;
@@ -26,7 +25,7 @@ export function TestimonialsCards({ testimonials }: TestimonialsCardsProps) {
             return (
               <Card
                 key={i}
-                className="relative flex flex-col h-full duration-300 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
+                className="bg-transparent relative flex flex-col h-full duration-300 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
               >
                 <CardContent className="p-4">
