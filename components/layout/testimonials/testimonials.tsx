@@ -14,7 +14,7 @@ export function TestimonialsCards({ testimonials }: TestimonialsCardsProps) {
   return (
     <section className="w-full pt-16 font-workSans">
       <div className="px-4 md:px-6">
-        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
           {testimonials.map((t, i) => {
             const initials = t.name
               .split(" ")
