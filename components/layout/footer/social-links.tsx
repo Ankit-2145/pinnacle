@@ -12,7 +12,7 @@ interface SocialLinksProps {
 
 export function SocialLinks({ links }: SocialLinksProps) {
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 pt-4">
       {links.map((social, index) => {
         const IconComponent = social.icon;
         return (

@@ -6,9 +6,17 @@ interface CompanyInfoProps {
   address: string;
   email: string;
   phone: string;
+  copyright: string;
 }
 
-export function CompanyInfo({ name, address, email, phone }: CompanyInfoProps) {
+export function CompanyInfo({
+  name,
+  address,
+  email,
+  phone,
+  copyright,
+}: CompanyInfoProps) {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="space-y-6">
       {/* Logo */}
@@ -23,6 +31,9 @@ export function CompanyInfo({ name, address, email, phone }: CompanyInfoProps) {
 
       {/* Address */}
       <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
+        <p className="max-w text-sm text-muted-foreground pb-4">
+          © {currentYear} {copyright}. All rights reserved.
+        </p>
         {address.split("\n").map((line, index) => (
           <span key={index}>
             {line}
