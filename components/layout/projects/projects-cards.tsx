@@ -36,7 +36,6 @@ const projects: Project[] = [
       "Razorpay",
       "Zustand",
       "Postgresql",
-      "webpack",
     ],
     category: "Education",
     client: "Research Goal",
@@ -75,7 +74,7 @@ const projects: Project[] = [
     description:
       "A responsive educational platform built to simplify learning. Born from real academic challenges, it delivers curated study materials, updated syllabi, and a lot more. Originally an open-source project, now being developed under Pinnacle.",
     image: "/datanode.png",
-    technologies: ["Next.js", "React", "TypeScript", "nextra", "Framer Motion"],
+    technologies: ["Next.js", "React", "TypeScript", "nextra"],
     category: "Education",
     client: "Open Source Project",
     liveUrl: "https://www.datanode.in",
@@ -113,7 +112,7 @@ const getTechIcon = (tech: string) => {
 export const ProjectsCards = () => {
   const springOptions = { bounce: 0.1 };
   return (
-    <div className="max-w-7xl mx-auto pt-16 px-4 lg:px-0 font-workSans">
+    <div className="max-w-6xl mx-auto pt-16 px-4 lg:px-0 font-workSans">
       {/* Projects Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {projects.map((project) => (

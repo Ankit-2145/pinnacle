@@ -4,7 +4,7 @@ import ProcessCards from "@/components/layout/process/process-cards";
 export const OurProcess = () => {
   return (
     <section className="font-workSans py-24">
-      <div className="max-w-7xl mx-4 2xl:mx-auto flex flex-col lg:flex-row lg:justify-between items-start">
+      <div className="max-w-6xl mx-4 2xl:mx-auto flex flex-col lg:flex-row lg:justify-between items-start">
         <div className="max-w-sm md:max-w-lg lg:max-w-xl text-2xl md:text-4xl text-left text-foreground tracking-wide mb-4">
           <h2>How We Turn Your Idea Into Something That Works</h2>
           <p className="max-w-sm lg:max-w-md text-muted-foreground text-base pt-4">
@@ -14,7 +14,7 @@ export const OurProcess = () => {
         </div>
         <ProcessPillars />
       </div>
-      <div className="pt-16 max-w-7xl mx-4 2xl:mx-auto">
+      <div className="pt-16 max-w-6xl mx-4 lg:mx-0 2xl:mx-auto">
         <ProcessCards />
       </div>
     </section>

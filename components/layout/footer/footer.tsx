@@ -16,7 +16,7 @@ export function Footer({
 }: FooterProps) {
   return (
     <footer className="bg-background font-workSans">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0">
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">

@@ -31,9 +31,9 @@ export function CompanyInfo({
 
       {/* Address */}
       <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-        <p className="max-w text-sm text-muted-foreground pb-4">
+        <span className="block max-w text-sm text-muted-foreground pb-4">
           © {currentYear} {copyright}. All rights reserved.
-        </p>
+        </span>
         {address.split("\n").map((line, index) => (
           <span key={index}>
             {line}

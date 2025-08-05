@@ -15,7 +15,7 @@ import { Connect } from "./services-ui-ux";
 
 export const ServicesBentoGrid = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full font-workSans">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-6xl mx-auto w-full font-workSans">
       {/* WEBSITE & WEB APP DEVELOPMENT */}
       <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
