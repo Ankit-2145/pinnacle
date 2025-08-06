@@ -32,7 +32,7 @@ export const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-background backdrop-blur supports-[backdrop-filter]:bg-background">
-      <div className="container flex h-16 max-w-screen-xl mx-auto items-center justify-between px-4">
+      <div className="flex h-16 max-w-7xl mx-auto items-center justify-between px-4">
         {/* Logo */}
         <Link
           href="/"
