@@ -28,10 +28,50 @@ const navItems: NavItem[] = [
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
+  const [isVisible, setIsVisible] = React.useState<boolean>(true);
+  const lastScrollY = React.useRef<number>(0);
+  const ticking = React.useRef<boolean>(false);
   const pathname = usePathname();
 
+  // Memoized scroll handler using useCallback
+  const handleScroll = React.useCallback(() => {
+    if (!ticking.current) {
+      requestAnimationFrame(() => {
+        const currentScrollY = window.scrollY;
+
+        // Show navbar when at top of page
+        if (currentScrollY < 10) {
+          setIsVisible(true);
+        } else if (currentScrollY < lastScrollY.current) {
+          // Scrolling up
+          setIsVisible(true);
+        } else if (
+          currentScrollY > lastScrollY.current &&
+          currentScrollY > 100
+        ) {
+          // Scrolling down and past 100px
+          setIsVisible(false);
+        }
+
+        lastScrollY.current = currentScrollY;
+        ticking.current = false;
+      });
+      ticking.current = true;
+    }
+  }, []); // Empty dependency array since we're using refs
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [handleScroll]); // Only depends on the memoized handleScroll
+
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background backdrop-blur supports-[backdrop-filter]:bg-background">
+    <nav
+      className={cn(
+        "sticky top-0 z-50 w-full bg-background transition-all duration-300 ease-in-out",
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      )}
+    >
       <div className="flex h-16 max-w-7xl mx-auto items-center justify-between px-4">
         {/* Logo */}
         <Link
