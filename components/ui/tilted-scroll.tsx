@@ -17,14 +17,14 @@ export const TiltedScroll = ({
 }: TiltedScrollProps) => {
   return (
     <div className={cn("flex items-center justify-center", className)}>
-      <div className="relative overflow-hidden [mask-composite:intersect] [mask-image:linear-gradient(to_right,transparent,black_5rem),linear-gradient(to_left,transparent,black_5rem),linear-gradient(to_bottom,transparent,black_5rem),linear-gradient(to_top,transparent,black_5rem)]">
-        <div className="grid h-[200px] w-[500px] gap-5 skew-scroll grid-cols-1">
+      <div className="relative overflow-hidden [mask-composite:intersect] [mask-image:linear-gradient(to_right,transparent,black_2rem),linear-gradient(to_left,transparent,black_2rem),linear-gradient(to_bottom,transparent,black_2rem),linear-gradient(to_top,transparent,black_2rem)]">
+        <div className="grid h-[250px] w-[500px] gap-5 skew-scroll grid-cols-1">
           {items.map((item) => (
             <div
               key={item.id}
               className="group flex items-center gap-2 cursor-pointer rounded-md border border-border/40 bg-gradient-to-b from-background/80 to-muted/80 p-4 shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-xl dark:border-border"
             >
-              <BadgeCheck className="h-6 w-6 mr-1 transition-colors text-foreground" />
+              <BadgeCheck className="h-6 w-6 mr-1 transition-colors text-blue-500" />
               <p className="text-foreground font-workSans text-sm">
                 {item.text}
               </p>

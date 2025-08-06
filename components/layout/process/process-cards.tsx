@@ -12,7 +12,7 @@ export default function ProcessCards() {
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
       rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8"
       >
-        <h2 className="text-lg font-medium text-foreground">
+        <h2 className="text-xl font-medium text-foreground">
           01. You Talk, We Listen (Yes, Really)
         </h2>
         <p className="text-sm text-muted-foreground mt-4">
@@ -29,7 +29,7 @@ export default function ProcessCards() {
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
       rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8"
       >
-        <h2 className="text-lg font-medium text-foreground">
+        <h2 className="text-xl font-medium text-foreground">
           02. We Plan Like Overthinkers
         </h2>
         <p className="text-sm text-muted-foreground mt-4">
@@ -46,7 +46,7 @@ export default function ProcessCards() {
       rounded-xl col-span-1 lg:col-span-2 w-full flex flex-col lg:flex-row lg:justify-between group overflow-hidden relative h-full p-8"
       >
         <div>
-          <h2 className="text-lg font-medium text-foreground">
+          <h2 className="text-xl font-medium text-foreground">
             03. Design That Doesn&apos;t Make You Cry
           </h2>
           <p className="lg:max-w-sm text-sm text-muted-foreground mt-4">
@@ -61,34 +61,42 @@ export default function ProcessCards() {
       <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8"
+      rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8 group"
       >
-        <h2 className="text-lg font-medium text-foreground">
-          04. We Code It Like We Mean It
-        </h2>
-        <p className="text-sm text-muted-foreground mt-4">
-          This is where the dev magic happens. No duct tape solutions or Stack
-          Overflow bandaids — we write production-ready code that loads fast,
-          scales well, and doesn&apos;t break on launch day.
-        </p>
-        <CodeBlockWithHeader />
+        <div className="relative z-10 max-w-xs">
+          <h2 className="text-xl font-medium text-foreground">
+            04. We Code It Like We Mean It
+          </h2>
+          <p className="text-sm text-muted-foreground mt-4">
+            This is where the dev magic happens. No duct tape solutions or Stack
+            Overflow bandaids — we write production-ready code that loads fast,
+            scales well, and doesn&apos;t break on launch day.
+          </p>
+        </div>
+        <div className="absolute top-4 left-8/12 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
+          <CodeBlockWithHeader />
+        </div>
       </div>
 
       <div
         className="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
-      rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8"
+      rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8 group"
       >
-        <h2 className="text-lg font-medium text-foreground">
-          05. Launch, Celebrate, Support
-        </h2>
-        <p className="text-sm text-muted-foreground mt-4">
-          We don&apos;t just hit “deploy” and disappear into the void. We stick
-          around, fix bugs, answer your late-night questions, and make sure
-          everything runs smoother. Because, shockingly, support is part of the
-          job.
-        </p>
-        <ProcessLaunch />
+        <div className="absolute top-4 left-8/12 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
+          <ProcessLaunch />
+        </div>
+        <div className="relative z-10 max-w-xs">
+          <h2 className="text-xl font-medium text-foreground">
+            05. Launch, Celebrate, Support
+          </h2>
+          <p className="text-sm text-muted-foreground mt-4">
+            We don&apos;t just hit “deploy” and disappear into the void. We
+            stick around, fix bugs, answer your late-night questions, and make
+            sure everything runs smoother. Because, shockingly, support is part
+            of the job.
+          </p>
+        </div>
       </div>
     </div>
   );

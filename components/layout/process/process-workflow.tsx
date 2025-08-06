@@ -60,11 +60,11 @@ export const ProcessTimelineWorkflow = () => {
                 x2="100%"
                 y2="0%"
               >
-                <stop offset="0%" stopColor="#f97316" />
-                <stop offset="25%" stopColor="#a855f7" />
+                <stop offset="0%" stopColor="#3b82f6" />
+                <stop offset="25%" stopColor="#3b82f6" />
                 <stop offset="50%" stopColor="#3b82f6" />
-                <stop offset="75%" stopColor="#22c55e" />
-                <stop offset="100%" stopColor="#10b981" />
+                <stop offset="75%" stopColor="#3b82f6" />
+                <stop offset="100%" stopColor="#3b82f6" />
               </linearGradient>
 
               <filter id="glow">
@@ -120,7 +120,7 @@ export const ProcessTimelineWorkflow = () => {
 
                     {isComplete && (
                       <motion.div
-                        className="absolute -top-1 -right-1 w-5 h-5 bg-green-500 rounded-full flex items-center justify-center text-white text-xs"
+                        className="absolute -top-1 -right-1 w-5 h-5 bg-emerald-400 rounded-full flex items-center justify-center text-white text-xs"
                         initial={{ scale: 0, rotate: -180 }}
                         animate={{ scale: 1, rotate: 0 }}
                         transition={{
