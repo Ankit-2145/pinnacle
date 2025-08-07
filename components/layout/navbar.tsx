@@ -78,13 +78,13 @@ export const Navbar = () => {
           href="/"
           className="flex items-center space-x-2 transition-opacity hover:opacity-80"
         >
-          <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">
+          <span className="text-xl font-semibold tracking-tight bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">
             Pinnacle
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-8 font-workSans">
+        <div className="hidden xl:flex items-center space-x-8 font-workSans">
           {navItems.map((item) => {
             const isActive =
               (pathname === "/" && item.href === "/") ||
@@ -110,13 +110,13 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Actions */}
-        <div className="hidden lg:flex items-center space-x-3">
+        <div className="hidden xl:flex items-center space-x-3">
           <ModeToggle />
           <CTAButton />
         </div>
 
         {/* Mobile Menu */}
-        <div className="flex items-center space-x-2 lg:hidden">
+        <div className="flex items-center space-x-2 xl:hidden">
           <CTAButton />
           <ModeToggle />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>

@@ -6,7 +6,7 @@ import Iridescence from "@/components/iridescence";
 
 export const CTABanner = () => {
   return (
-    <div className="max-w-6xl mx-auto overflow-hidden rounded-lg relative border font-workSans h-64">
+    <div className="max-w-6xl mx-auto overflow-hidden rounded-lg relative border font-workSans h-fit">
       {/* Text Content */}
       <div className="relative h-full flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-0">

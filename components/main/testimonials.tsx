@@ -2,7 +2,7 @@ import { TestimonialsCards } from "../layout/testimonials/testimonials";
 
 export const Testimonials = () => {
   return (
-    <section className="font-workSans py-24">
+    <section className="font-workSans py-24 px-4">
       <div>
         <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
           <h1>Turns Out, People Like Working With Us</h1>

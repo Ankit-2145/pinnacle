@@ -2,7 +2,7 @@ import { ProjectsCards } from "@/components/layout/projects/projects-cards";
 
 export const OurProjects = () => {
   return (
-    <section className="font-workSans py-24">
+    <section className="font-workSans py-24 px-4">
       <div>
         <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
           <h1>What We&apos;ve Actually Shipped</h1>

@@ -52,7 +52,7 @@ export const PricingCards = () => {
 
   return (
     <div className="flex items-center justify-center w-full mx-auto pt-16">
-      <div className="flex flex-col lg:flex-row justify-between mx-4 flex-wrap max-w-6xl gap-8">
+      <div className="flex flex-col lg:flex-row justify-between flex-wrap max-w-6xl gap-8">
         {pricingPlans.map((plan, index) => (
           <div
             key={index}

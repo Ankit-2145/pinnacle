@@ -24,7 +24,7 @@ export function CompanyInfo({
         href="/"
         className="inline-block transition-opacity hover:opacity-80"
       >
-        <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-2xl font-bold tracking-tight text-transparent">
+        <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-2xl font-semibold tracking-tight text-transparent">
           {name}
         </span>
       </Link>

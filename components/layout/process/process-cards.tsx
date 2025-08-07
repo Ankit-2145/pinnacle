@@ -73,7 +73,7 @@ export default function ProcessCards() {
             scales well, and doesn&apos;t break on launch day.
           </p>
         </div>
-        <div className="absolute top-4 left-8/12 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
+        <div className="hidden lg:block absolute top-4 left-8/12 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
           <CodeBlockWithHeader />
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function ProcessCards() {
       dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]
       rounded-xl col-span-1 w-full flex flex-col group overflow-hidden relative h-full p-8 group"
       >
-        <div className="absolute top-4 left-8/12 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
+        <div className="hidden lg:block absolute top-4 left-8/12 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-all duration-300 ease-in-out">
           <ProcessLaunch />
         </div>
         <div className="relative z-10 max-w-xs">

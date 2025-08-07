@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer/footer";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -50,6 +51,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            {/* <SmoothCursor /> */}
+
             <Navbar />
             {children}
             <Footer />

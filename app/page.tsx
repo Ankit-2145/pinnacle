@@ -7,12 +7,10 @@ import { Pricing } from "@/components/main/pricing";
 import { FAQs } from "@/components/main/faq";
 import { Testimonials } from "@/components/main/testimonials";
 import { CTA } from "@/components/main/cta";
-// import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 export default function Main() {
   return (
     <main>
-      {/* <SmoothCursor /> */}
       <Hero />
       <About />
       <OurServices />

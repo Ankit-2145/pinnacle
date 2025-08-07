@@ -8,7 +8,7 @@ import {
 
 export const OurServices = () => {
   return (
-    <section className="font-workSans py-24">
+    <section className="font-workSans py-24 px-4">
       <div>
         <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
           Crafting Digital{" "}
@@ -24,11 +24,11 @@ export const OurServices = () => {
           </p>
         </div>
       </div>
-      <div className="pt-16 mx-4">
+      <div className="pt-16">
         <ServicesBentoGrid />
       </div>
       {/* Call to Action */}
-      <div className="mt-20 text-center mx-4">
+      <div className="mt-20 text-center">
         <div className="max-w-xl mx-auto space-y-6">
           <div className="space-y-3">
             <h3 className="text-xl md:text-2xl text-foreground">
