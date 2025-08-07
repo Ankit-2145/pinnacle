@@ -4,7 +4,7 @@ import { ReactLenis } from "lenis/react";
 import { Work_Sans, Space_Grotesk } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 
-import { Navbar } from "@/components/layout/navbar";
+import { Navbar } from "@/components/layout/navbar/navbar";
 import { Footer } from "@/components/layout/footer/footer";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
 

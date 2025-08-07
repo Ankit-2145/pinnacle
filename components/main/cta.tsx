@@ -1,4 +1,4 @@
-import { CTABanner } from "../layout/cta/cta-banner";
+import { CTABanner } from "@/components/shared/cta/cta-banner";
 
 export const CTA = () => {
   return (

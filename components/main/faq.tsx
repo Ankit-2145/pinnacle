@@ -1,4 +1,4 @@
-import { FAQQuestions } from "../layout/faq/faq-questions";
+import { FAQQuestions } from "@/components/sections/home/faq/faq-questions";
 
 export const FAQs = () => {
   return (

@@ -1,4 +1,4 @@
-import { TestimonialsCards } from "../layout/testimonials/testimonials";
+import { TestimonialsCards } from "@/components/sections/home/testimonials/testimonials-cards";
 
 export const Testimonials = () => {
   return (

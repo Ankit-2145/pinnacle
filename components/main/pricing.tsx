@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
-import { AppPrimaryButton, AppSecondaryButton } from "../layout/app-button";
-import { PricingCards } from "../layout/pricing/pricing-cards";
+import { AppPrimaryButton, AppSecondaryButton } from "../shared/app-button";
+import { PricingCards } from "@/components/shared/pricing/pricing-cards";
 
 export const Pricing = () => {
   return (

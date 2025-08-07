@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
-import StatsCounter from "@/components/layout/count-up";
-import { AppPrimaryButton } from "@/components/layout/app-button";
+import StatsCounter from "@/components/sections/home/about/count-up";
+import { AppPrimaryButton } from "@/components/shared/app-button";
 
 export const About = () => {
   return (

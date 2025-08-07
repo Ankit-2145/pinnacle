@@ -7,7 +7,7 @@ import { TextAnimate } from "@/components/ui/text-animate";
 import {
   AppPrimaryButton,
   AppSecondaryButton,
-} from "@/components/layout/app-button";
+} from "@/components/shared/app-button";
 
 export const Hero = () => {
   const springOptions = { bounce: 0.1 };

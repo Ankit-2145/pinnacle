@@ -4,12 +4,12 @@ import Link from "next/link";
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
-
-import { ModeToggle } from "./mode-toggle";
 import { usePathname } from "next/navigation";
+
 import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
+import { CTAButton } from "@/components/shared/cta/cta-button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { CTAButton } from "./cta-button";
 
 interface NavItem {
   name: string;

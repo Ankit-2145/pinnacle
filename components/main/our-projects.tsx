@@ -1,4 +1,4 @@
-import { ProjectsCards } from "@/components/layout/projects/projects-cards";
+import { ProjectsCards } from "@/components/sections/home/projects/projects-cards";
 
 export const OurProjects = () => {
   return (
