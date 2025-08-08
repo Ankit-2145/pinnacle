@@ -1,8 +1,8 @@
 "use client";
-import Silk from "@/components/silk";
+
 import { ChevronRight } from "lucide-react";
 import { AppPrimaryButton } from "../app-button";
-import Iridescence from "@/components/iridescence";
+import Iridescence from "@/components/theme/iridescence";
 
 export const CTABanner = () => {
   return (

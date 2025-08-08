@@ -10,17 +10,17 @@ import { PricingCards } from "@/components/shared/pricing/pricing-cards";
 
 const Pricing = () => {
   return (
-    <main>
-      <div className="mt-10 max-w-6xl mx-auto h-64 overflow-hidden font-workSans">
+    <main className="max-w-6xl mx-auto px-4 font-workSans">
+      <div className="mt-10 h-64 overflow-hidden">
         <Header
           heading="Our Pricing"
           subHeading="Clear pricing. No surprises. Just results."
         />
       </div>
 
-      <section className="font-workSans py-24 px-4">
+      <section className="py-24">
         <div>
-          <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
+          <div className="text-2xl md:text-4xl text-center text-foreground tracking-wide">
             <h1>Transparent Pricing for Real Results</h1>
             <p className=" text-muted-foreground text-base pt-4">
               From quick launches to fully custom platforms, we offer scalable

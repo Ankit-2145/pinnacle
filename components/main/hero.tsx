@@ -1,8 +1,8 @@
 "use client";
 
 import { ChevronRight } from "lucide-react";
-import Iridescence from "../iridescence";
 import { Magnetic } from "@/components/ui/magnetic";
+import Iridescence from "@/components/theme/iridescence";
 import { TextAnimate } from "@/components/ui/text-animate";
 import {
   AppPrimaryButton,

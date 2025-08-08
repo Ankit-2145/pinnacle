@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { ReactLenis } from "lenis/react";
 import { Work_Sans, Space_Grotesk } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 import { Navbar } from "@/components/layout/navbar/navbar";
 import { Footer } from "@/components/layout/footer/footer";
@@ -23,8 +23,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Pinnacle Smart Solutions",
-  description: "Your Business Our Canvas of Digital Magic",
+  title: "Pinnacle Smart Solutions | we craft digital experiences",
+  description: "Website Development, app development, web dsigning",
 };
 
 export default function RootLayout({
