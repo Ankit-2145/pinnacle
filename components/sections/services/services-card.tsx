@@ -58,13 +58,6 @@ export const ServicesCard = () => {
             key={service.id}
             className="group relative overflow-hidden transition-all duration-300 shadow-md hover:shadow-lg hover:translate-y-[-4px] border-0 flex flex-col"
           >
-            <div
-              className={`absolute top-0 left-0 w-full h-1 ${service.color}`}
-              style={{
-                borderTopLeftRadius: "inherit",
-                borderTopRightRadius: "inherit",
-              }}
-            />
             <CardHeader className="pb-3 pt-6">
               <div className="flex items-start gap-3 mb-3">
                 <CardTitle
@@ -110,10 +103,10 @@ export const ServicesCard = () => {
 
             {/* Decorative elements */}
             <div
-              className={`absolute ${service.color} -top-8 -right-8 w-96 h-96 blur-2xl rounded-full opacity-0 dark:opacity-10`}
+              className={`absolute ${service.color} -top-8 -right-8 w-96 h-96 blur-2xl rounded-full opacity-10`}
             />
             <div
-              className={`absolute ${service.color} -bottom-8 -left-8 w-96 h-96 blur-2xl rounded-full opacity-0 dark:opacity-10`}
+              className={`absolute ${service.color} -bottom-8 -left-8 w-96 h-96 blur-2xl rounded-full opacity-10`}
             />
           </Card>
         ))}
