@@ -1,5 +1,16 @@
+import { Header } from "@/components/shared/headers/header";
+
 const About = () => {
-  return <div className="text-5xl italic text-center text-pink-400">About</div>;
+  return (
+    <main className="max-w-6xl mx-auto px-4 font-workSans">
+      <div className="mt-10 h-64 overflow-hidden">
+        <Header
+          heading="Our Story"
+          subHeading="Clear pricing. No surprises. Just results."
+        />
+      </div>
+    </main>
+  );
 };
 
 export default About;
