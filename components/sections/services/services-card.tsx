@@ -103,10 +103,10 @@ export const ServicesCard = () => {
 
             {/* Decorative elements */}
             <div
-              className={`absolute ${service.color} -top-8 -right-8 w-96 h-96 blur-2xl rounded-full opacity-10`}
+              className={`absolute ${service.color} -top-8 -right-8 w-96 h-96 blur-2xl rounded-full opacity-0 dark:opacity-10`}
             />
             <div
-              className={`absolute ${service.color} -bottom-8 -left-8 w-96 h-96 blur-2xl rounded-full opacity-10`}
+              className={`absolute ${service.color} -bottom-8 -left-8 w-96 h-96 blur-2xl rounded-full opacity-0 dark:opacity-10`}
             />
           </Card>
         ))}
