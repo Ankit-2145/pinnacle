@@ -51,12 +51,13 @@ export const ServicesCard = () => {
   }));
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-workSans">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 font-workSans">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {services.map((service) => (
           <Card
             key={service.id}
-            className="group relative overflow-hidden transition-all duration-300 shadow-md hover:shadow-lg hover:translate-y-[-4px] border-0 flex flex-col"
+            className="group relative overflow-hidden transition-all duration-300 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
+      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] hover:translate-y-[-4px] border-0 flex flex-col"
           >
             <CardHeader className="pb-3 pt-6">
               <div className="flex items-start gap-3 mb-3">
