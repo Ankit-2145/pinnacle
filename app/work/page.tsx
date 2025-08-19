@@ -1,3 +1,4 @@
+import WorkCard from "@/components/sections/work/work-card";
 import { Header } from "@/components/shared/headers/header";
 
 const Work = () => {
@@ -10,7 +11,9 @@ const Work = () => {
         />
       </div>
 
-      <section className="py-24"></section>
+      <section className="py-24">
+        <WorkCard />
+      </section>
     </main>
   );
 };

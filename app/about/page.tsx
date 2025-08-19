@@ -6,7 +6,7 @@ const About = () => {
       <div className="mt-10 h-64 overflow-hidden">
         <Header
           heading="Our Story"
-          subHeading="Clear pricing. No surprises. Just results."
+          subHeading="Delivering impossible deadlines and unbelievable results since 2019"
         />
       </div>
     </main>

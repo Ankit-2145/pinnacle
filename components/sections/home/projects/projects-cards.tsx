@@ -21,7 +21,7 @@ const getTechIcon = (tech: string) => {
     React: "/react.svg",
     "Node.js": "/nodejs-icon.svg",
     MongoDB: "/mongodb-icon.svg",
-    Postgresql: "/postgresql.svg",
+    PostgreSQL: "/postgresql.svg",
     HTML: "/html.svg",
     CSS: "/css.svg",
     JavaScript: "/javascript.svg",

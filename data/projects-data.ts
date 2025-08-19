@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "NextAuth",
       "Razorpay",
       "Zustand",
-      "Postgresql",
+      "PostgreSQL",
     ],
     category: "Education",
     client: "Research Goal",
