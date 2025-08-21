@@ -41,7 +41,7 @@ export const ProjectsCards = () => {
     <div className="max-w-6xl mx-auto pt-16 px-4 lg:px-0 font-workSans">
       {/* Projects Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {projects.map((project) => (
+        {projects.slice(0, 4).map((project) => (
           <div
             key={project.id}
             className="group rounded-xl overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
