@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Hero } from "@/components/main/hero";
 import { About } from "@/components/main/about";
 import { OurServices } from "@/components/main/our-services";
@@ -7,6 +8,12 @@ import { Pricing } from "@/components/main/pricing";
 import { FAQs } from "@/components/main/faq";
 import { Testimonials } from "@/components/main/testimonials";
 import { CTA } from "@/components/main/cta";
+
+export const metadata: Metadata = {
+  title: "Pinnacle Smart Solutions | Web Design & Development Agency",
+  description:
+    "We help businesses and startups build stunning websites, apps, and digital platforms that drive growth and success.",
+};
 
 export default function Main() {
   return (

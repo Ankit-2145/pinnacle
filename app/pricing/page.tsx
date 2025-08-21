@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import {
   AppPrimaryButton,
@@ -5,6 +6,12 @@ import {
 } from "@/components/shared/app-button";
 import { Header } from "@/components/shared/headers/header";
 import { PricingCards } from "@/components/shared/pricing/pricing-cards";
+
+export const metadata: Metadata = {
+  title: "Our Pricing | Pinnacle Smart Solutions",
+  description:
+    "Transparent pricing for websites, apps, and digital solutions. Choose from Starter, Growth, or Custom Solutions to match your business needs.",
+};
 
 const Pricing = () => {
   return (

@@ -1,5 +1,12 @@
-import { ServicesCard } from "@/components/sections/services/services-card";
+import type { Metadata } from "next";
 import { Header } from "@/components/shared/headers/header";
+import { ServicesCard } from "@/components/sections/services/services-card";
+
+export const metadata: Metadata = {
+  title: "Our Services | Pinnacle Smart Solutions",
+  description:
+    "Explore our web design, development, branding, and digital consultancy services crafted to help your business grow online.",
+};
 
 const Services = () => {
   return (

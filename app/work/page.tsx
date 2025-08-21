@@ -1,5 +1,12 @@
-import WorkCard from "@/components/sections/work/work-card";
+import type { Metadata } from "next";
 import { Header } from "@/components/shared/headers/header";
+import WorkCard from "@/components/sections/work/work-card";
+
+export const metadata: Metadata = {
+  title: "Our Work | Pinnacle Smart Solutions",
+  description:
+    "See how we've helped businesses transform their digital presence with modern websites, apps, and tailored solutions.",
+};
 
 const Work = () => {
   return (
