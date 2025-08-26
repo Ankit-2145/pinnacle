@@ -52,7 +52,7 @@ export const ServicesCard = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 font-workSans">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service) => (
           <Card
             key={service.id}
@@ -101,14 +101,6 @@ export const ServicesCard = () => {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-all" />
               </Button>
             </CardFooter>
-
-            {/* Decorative elements */}
-            <div
-              className={`absolute ${service.color} -top-8 -right-8 w-96 h-96 blur-2xl rounded-full opacity-0 dark:opacity-10`}
-            />
-            <div
-              className={`absolute ${service.color} -bottom-8 -left-8 w-96 h-96 blur-2xl rounded-full opacity-0 dark:opacity-10`}
-            />
           </Card>
         ))}
       </div>

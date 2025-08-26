@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { Header } from "@/components/shared/headers/header";
+import { ContactForm } from "@/components/sections/contact/contactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Pinnacle Smart Solutions",
@@ -12,10 +13,14 @@ const Contact = () => {
     <main className="max-w-6xl mx-auto px-4 font-workSans">
       <div className="mt-10 h-64 overflow-hidden">
         <Header
-          heading="Talk to Us"
-          subHeading="Clear pricing. No surprises. Just results."
+          heading="Ready When You Are"
+          subHeading="Projects, partnerships, or just a quick chat—we'll respond faster than you expect."
         />
       </div>
+
+      <section className="py-24">
+        <ContactForm />
+      </section>
     </main>
   );
 };

@@ -1,11 +1,13 @@
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-const Page = ({ params }: PageProps) => {
-  return <div>Page: {params.slug}</div>;
+const Page = async ({ params }: PageProps) => {
+  const { slug } = await params;
+
+  return <div>Page: {slug}</div>;
 };
 
 export default Page;
