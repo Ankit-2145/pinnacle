@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Navbar } from "@/components/layout/navbar/navbar";
 import { Footer } from "@/components/layout/footer/footer";
 import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import { Toaster } from "@/components/ui/sonner";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -56,6 +57,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <Toaster />
           </ThemeProvider>
         </ReactLenis>
       </body>

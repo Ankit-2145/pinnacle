@@ -34,21 +34,24 @@ const formSchema = z.object({
   email: z.email({
     message: "Enter a valid email address (e.g., name@example.com).",
   }),
-  phoneNumber: z.string().refine(
-    (val) => {
-      // Indian format: 10 digits, starts with 6-9
-      const indianRegex = /^[6-9]\d{9}$/;
-      // International format: + followed by 7-15 digits
-      const internationalRegex = /^\+?[1-9]\d{6,14}$/;
+  phoneNumber: z
+    .string()
+    .optional()
+    .refine(
+      (val) => {
+        if (!val) return true; // ✅ allow undefined or empty string
 
-      return indianRegex.test(val) || internationalRegex.test(val);
-    },
-    {
-      message:
-        "Invalid phone number. Use a valid Indian 10-digit number or international format (e.g. +14155552671).",
-    }
-  ),
-  projectType: z.string().optional(),
+        const indianRegex = /^[6-9]\d{9}$/; // Indian: 10 digits, starts with 6-9
+        const internationalRegex = /^\+?[1-9]\d{6,14}$/; // International: + and 7-15 digits
+
+        return indianRegex.test(val) || internationalRegex.test(val);
+      },
+      {
+        message:
+          "Invalid phone number. Use a valid Indian 10-digit number or international format (e.g. +14155552671).",
+      }
+    ),
+  projectType: z.string(),
   message: z.string().min(10, {
     message: "Your message should be at least 10 characters long.",
   }),
@@ -76,7 +79,10 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     const formData = new FormData();
-    formData.append("access_key", "6704c404-c1f4-4b31-853c-1075203c941f");
+    formData.append(
+      "access_key",
+      process.env.NEXT_PUBLIC_CONTACT_FORM_ACCESS_KEY as string
+    );
     Object.entries(values).forEach(([key, value]) => {
       if (value) formData.append(key, value);
     });
@@ -110,7 +116,7 @@ export function ContactForm() {
     >
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-4 lg:space-y-0">
             <FormField
               control={form.control}
               name="name"
@@ -149,7 +155,7 @@ export function ContactForm() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 space-y-4 lg:space-y-0">
             <FormField
               control={form.control}
               name="phoneNumber"
@@ -272,14 +278,25 @@ export function ContactForm() {
             )}
           />
 
-          <Button type="submit" className="w-full" disabled={isSubmitting}>
+          <Button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full lg:w-auto group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                 Sending...
               </>
             ) : (
-              "Send Message"
+              <span className="relative overflow-hidden">
+                <div className="absolute origin-bottom transition duration-[1.125s] [transform:translateX(-150%)_skewX(9deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+                  Send Message
+                </div>
+                <div className="transition duration-[1.125s] [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(9deg)]">
+                  Send Message
+                </div>
+              </span>
             )}
           </Button>
         </form>
