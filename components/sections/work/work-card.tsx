@@ -70,7 +70,7 @@ export const WorkCard = () => {
                     </Button>
                   </Magnetic>
                 </a>
-                <Link href={`work/${project.slug}`}>
+                {/* <Link href={`work/${project.slug}`}>
                   <Magnetic
                     intensity={0.2}
                     springOptions={springOptions}
@@ -81,7 +81,7 @@ export const WorkCard = () => {
                       View Case Study <Book className="w-4 h-4" />
                     </Button>
                   </Magnetic>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
