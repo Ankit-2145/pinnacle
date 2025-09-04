@@ -1,13 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { ReactLenis } from "lenis/react";
-import { Work_Sans, Space_Grotesk } from "next/font/google";
+
+import { Work_Sans, Space_Grotesk, Nunito } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
-import { Navbar } from "@/components/layout/navbar/navbar";
-import { Footer } from "@/components/layout/footer/footer";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { Toaster } from "@/components/ui/sonner";
+import LenisProvider from "@/components/providers/lenis-provider";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -20,6 +18,13 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-spaceGrotesk",
+  display: "swap",
+});
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
+  variable: "--font-nunito",
   display: "swap",
 });
 
@@ -36,27 +41,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${workSans.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${workSans.variable} ${spaceGrotesk.variable} ${nunito.variable} antialiased`}
       >
-        <ReactLenis
-          root
-          options={{
-            lerp: 0.1,
-            duration: 1.2,
-            smoothWheel: true,
-          }}
-        >
+        <LenisProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >
-            {/* <SmoothCursor /> */}
             {children}
             <Toaster />
           </ThemeProvider>
-        </ReactLenis>
+        </LenisProvider>
       </body>
     </html>
   );

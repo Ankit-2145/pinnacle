@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -7,6 +8,7 @@
   --color-brand-blue: #228ae7;
   --font-workSans: var(--font-workSans);
   --font-spaceGrotesk: var(--font-spaceGrotesk);
+  --font-nunito: var(--font-nunito);
 }
 
 @theme inline {
