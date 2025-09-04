@@ -53,10 +53,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {/* <SmoothCursor /> */}
-
-            <Navbar />
             {children}
-            <Footer />
             <Toaster />
           </ThemeProvider>
         </ReactLenis>
