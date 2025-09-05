@@ -88,12 +88,12 @@ const Blog = async () => {
                   </time>
 
                   <Button
-                    variant="ghost"
+                    variant="default"
                     size="sm"
-                    className="text-xs font-medium group-hover:text-primary transition-colors duration-200 p-0 h-auto"
+                    className="group text-xs font-medium bg-foreground text-background hover:bg-foreground duration-300 py-2 h-auto cursor-pointer transition-all"
                   >
                     <span>Read More</span>
-                    <ArrowRightCircle className="w-3 h-3 ml-1 transition-transform duration-200 group-hover:translate-x-1" />
+                    <ArrowRightCircle className="w-3 h-3 ml-1 transition-transform duration-200 group-hover:-rotate-45" />
                   </Button>
                 </CardFooter>
               </Link>
