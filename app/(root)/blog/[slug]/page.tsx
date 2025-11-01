@@ -6,7 +6,8 @@ import { urlFor } from "@/utils/sanityImageUrl";
 
 import { client } from "@/lib/sanity/client";
 import { SINGLE_POST_QUERY } from "@/lib/sanity/queries";
-import { ArrowRightCircle } from "lucide-react";
+import { ArrowRightCircle, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const options = { next: { revalidate: 30 } };
 
@@ -39,14 +40,16 @@ export default async function SingleBlogPage({
           )}
 
           <header className="mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
+            <h1 className="text-4xl font-bold text-foreground mb-6 leading-tight">
               {blog.title}
             </h1>
 
             {blog.publishedAt && (
-              <div className="flex items-center gap-2 text-gray-500">
-                <time className="text-sm text-gray-500 font-medium">
+              <div className="flex items-center gap-2 font-medium text-muted-foreground border-b pb-4">
+                <Calendar className="w-3 h-3 ml-1" />
+                <time className="text-sm text-muted-foreground font-medium">
                   {new Date(blog.publishedAt).toLocaleDateString("en-US", {
+                    weekday: "long",
                     year: "numeric",
                     month: "long",
                     day: "numeric",
@@ -56,19 +59,27 @@ export default async function SingleBlogPage({
             )}
           </header>
 
-          <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-p:leading-normal prose-a:text-blue-500 hover:prose-a:text-blue-600">
-            {Array.isArray(blog.body) && <PortableText value={blog.body} />}
+          <div className="prose prose-lg font-medium max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-blockquote:text-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-p:leading-normal prose-a:text-blue-500 hover:prose-a:text-blue-600">
+            {Array.isArray(blog.body) && (
+              <PortableText value={blog.body} />
+            )}{" "}
           </div>
         </article>
 
         <footer className="mt-16 pt-8 border-t">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-foreground transition-colors"
+          <Button
+            variant="default"
+            className="group text-sm font-medium bg-foreground hover:bg-foreground duration-300 py-2 h-auto cursor-pointer transition-all"
+            asChild
           >
-            Return to Blogs
-            <ArrowRightCircle className="w-4 h-4" />
-          </Link>
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-foreground transition-colors"
+            >
+              Return to Blog
+              <ArrowRightCircle className="w-3 h-3 ml-1 transition-transform duration-200 group-hover:-rotate-45" />
+            </Link>
+          </Button>
         </footer>
       </main>
     </div>

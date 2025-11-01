@@ -70,7 +70,19 @@ const Blog = async () => {
                     <h2 className="text-xl font-bold text-foreground leading-tight group-hover:text-primary transition-colors duration-200">
                       {blog.title}
                     </h2>
-
+                    {Array.isArray(blog.categories) &&
+                      blog.categories.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {blog.categories.map((cat: any) => (
+                            <span
+                              key={cat._id}
+                              className="text-[11px] px-2 py-1 rounded-full bg-red-500 text-muted-foreground font-medium tracking-wide"
+                            >
+                              {cat.title}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
                       {blog.description}
                     </p>
