@@ -58,7 +58,7 @@ export const projects: Project[] = [
     technologies: ["HTML", "Tailwind CSS", "JavaScript", "Vite", "Flowbite"],
     category: "Conference",
     client: "Shoolini University",
-    liveUrl: "https://applied-ai-conference.org",
+    liveUrl: "https://applied-ai-conference.netlify.app/",
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "React", "TypeScript", "nextra"],
     category: "Education",
     client: "Open Source Project",
-    liveUrl: "https://www.datanode.in",
+    liveUrl: "https://data-node.vercel.app/",
   },
   {
     id: 5,
