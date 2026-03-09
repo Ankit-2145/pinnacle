@@ -19,12 +19,25 @@ export default async function SingleBlogPage({
   const blog = await client.fetch<SanityDocument>(
     SINGLE_POST_QUERY,
     await params,
-    options
+    options,
   );
 
   return (
     <div className="bg-background font-nunito">
       <main className="max-w-4xl mx-auto px-6 py-12">
+        <Button
+          variant="default"
+          className="group text-sm font-medium bg-foreground hover:bg-foreground duration-300 py-2 h-auto cursor-pointer transition-all mb-8"
+          asChild
+        >
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 text-foreground transition-colors"
+          >
+            Return to Blog
+            <ArrowRightCircle className="w-3 h-3 ml-1 transition-transform duration-200 group-hover:-rotate-45" />
+          </Link>
+        </Button>
         <article>
           {blog.mainImage && (
             <div className="mb-12">
