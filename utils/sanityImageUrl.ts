@@ -1,8 +1,15 @@
-import imageUrlBuilder from "@sanity/image-url";
-import { client } from "@/lib/sanity/client";
+// sanityImageUrl.ts
+import {
+  createImageUrlBuilder,
+  type SanityImageSource,
+} from "@sanity/image-url";
 
-const builder = imageUrlBuilder(client);
+import client from "@/sanity.config"; // see example client config
 
-export function urlFor(source: any) {
+// Create an image URL builder using the client
+const builder = createImageUrlBuilder(client);
+
+// Export a function that can be used to get image URLs
+export function urlFor(source: SanityImageSource) {
   return builder.image(source);
 }
