@@ -15,7 +15,14 @@ const Blog = () => {
         <Header heading="Blogs" subHeading="We write our real experinces" />
       </div>
 
-      <section className="my-16 font-nunito"></section>
+      <section className="my-16 mx-auto font-nunito">
+        <p className="text-base text-muted-foreground leading-relaxed text-center">
+          No Blogs yet! We are working on it and will be live soon. Stay tuned
+          for updates and insights from our team of experts. We are excited to
+          share our knowledge and experiences with you through our upcoming blog
+          posts.
+        </p>
+      </section>
     </main>
   );
 };
