@@ -50,7 +50,7 @@ const Pricing = () => {
               <div className="flex items-center justify-center gap-4">
                 <AppPrimaryButton
                   label="Book a Free Call"
-                  href="/pricing"
+                  href="/contact"
                   icon={ArrowRight}
                 />
                 <AppSecondaryButton label="Drop a Message" href="/contact" />
