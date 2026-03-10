@@ -3,7 +3,6 @@ export interface Service {
   title: string;
   description: string;
   offerings: string[];
-  cta: string;
   color: string;
   lightColor: string;
   textColor: string;
@@ -24,7 +23,6 @@ export const servicesData = [
       "JAMstack websites",
       "Headless website architecture",
     ],
-    cta: "Build your website today",
     color: "bg-violet-600",
     lightColor: "bg-violet-100",
     textColor: "text-violet-600",
@@ -43,7 +41,6 @@ export const servicesData = [
       "Progressive Web Apps (PWAs)",
       "Real-time apps",
     ],
-    cta: "Launch your web app",
     color: "bg-sky-600",
     lightColor: "bg-sky-100",
     textColor: "text-sky-600",
@@ -62,7 +59,6 @@ export const servicesData = [
       "Push notification systems",
       "App performance optimization",
     ],
-    cta: "Get your mobile app built",
     color: "bg-emerald-600",
     lightColor: "bg-emerald-100",
     textColor: "text-emerald-600",
@@ -80,7 +76,6 @@ export const servicesData = [
       "Accessibility (WCAG) design integration",
       "Interactive mockups and flows",
     ],
-    cta: "Design a better user journey",
     color: "bg-pink-600",
     lightColor: "bg-pink-100",
     textColor: "text-pink-600",
@@ -98,7 +93,6 @@ export const servicesData = [
       "Multi-vendor marketplace platforms",
       "Inventory and order management systems",
     ],
-    cta: "Start selling online",
     color: "bg-amber-600",
     lightColor: "bg-amber-100",
     textColor: "text-amber-600",
@@ -117,7 +111,6 @@ export const servicesData = [
       "Backup & recovery solutions",
       "Performance monitoring",
     ],
-    cta: "Keep your site secure",
     color: "bg-cyan-600",
     lightColor: "bg-cyan-100",
     textColor: "text-cyan-600",
@@ -136,7 +129,6 @@ export const servicesData = [
       "SEO copywriting & content structuring",
       "Keyword research & strategy",
     ],
-    cta: "Improve your site ranking",
     color: "bg-orange-600",
     lightColor: "bg-orange-100",
     textColor: "text-orange-600",
@@ -154,7 +146,6 @@ export const servicesData = [
       "API integrations",
       "Backend logic automation",
     ],
-    cta: "Build a custom solution",
     color: "bg-blue-600",
     lightColor: "bg-blue-100",
     textColor: "text-blue-600",
@@ -172,7 +163,6 @@ export const servicesData = [
       "Multilingual content support",
       "CMS training & documentation",
     ],
-    cta: "Empower your content team",
     color: "bg-teal-600",
     lightColor: "bg-teal-100",
     textColor: "text-teal-600",
@@ -190,7 +180,6 @@ export const servicesData = [
       "Digital & print collateral",
       "Rebranding strategy and redesign",
     ],
-    cta: "Craft your brand identity",
     color: "bg-purple-600",
     lightColor: "bg-purple-100",
     textColor: "text-purple-600",

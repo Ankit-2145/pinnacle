@@ -43,7 +43,6 @@ export const ServicesCard = () => {
     title: service.title,
     description: service.description,
     offerings: service.offerings,
-    cta: service.cta,
     icon: iconMap[service.title],
     color: service.color,
     lightColor: service.lightColor,
@@ -92,15 +91,6 @@ export const ServicesCard = () => {
                 </ul>
               </div>
             </CardContent>
-
-            <CardFooter className="pt-3 border-t mt-auto">
-              <Button
-                className={`w-full text-white ${service.color} hover:${service.color} transition-all`}
-              >
-                {service.cta}
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-all" />
-              </Button>
-            </CardFooter>
           </Card>
         ))}
       </div>
