@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Pricing = () => {
   return (
-    <main className="max-w-6xl mx-auto px-4 font-workSans">
+    <main className="mx-auto max-w-6xl px-4 font-workSans">
       <div className="mt-10 h-64 overflow-hidden">
         <Header
           heading="Our Pricing"
@@ -25,18 +25,18 @@ const Pricing = () => {
 
       <section className="py-24">
         <div>
-          <div className="text-2xl md:text-4xl text-center text-foreground tracking-wide">
+          <div className="text-center text-2xl tracking-wide text-foreground md:text-4xl">
             <h1>Transparent Pricing for Real Results</h1>
-            <p className=" text-muted-foreground text-base pt-4">
+            <p className="pt-4 text-base text-muted-foreground">
               From quick launches to fully custom platforms, we offer scalable
               solutions that fit your goals
             </p>
           </div>
           <PricingCards />
           <div className="mt-20 text-center">
-            <div className="max-w-2xl mx-auto space-y-6">
+            <div className="mx-auto max-w-2xl space-y-6">
               <div className="space-y-3">
-                <h3 className="text-xl md:text-2xl text-foreground">
+                <h3 className="text-xl text-foreground md:text-2xl">
                   Worried about the budget? Let&apos;s still talk.
                 </h3>
                 <p className="text-muted-foreground">

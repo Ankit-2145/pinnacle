@@ -4,20 +4,20 @@ import { PricingCards } from "@/components/shared/pricing/pricing-cards";
 
 export const Pricing = () => {
   return (
-    <section className="font-workSans py-24 px-4">
+    <section className="px-4 py-24 font-workSans">
       <div>
-        <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
+        <div className="mx-auto max-w-6xl text-center text-2xl tracking-wide text-foreground md:text-4xl">
           <h1>Transparent Pricing for Real Results</h1>
-          <p className=" text-muted-foreground text-base pt-4">
+          <p className="pt-4 text-base text-muted-foreground">
             From quick launches to fully custom platforms, we offer scalable
             solutions that fit your goals.
           </p>
         </div>
         <PricingCards />
         <div className="mt-20 text-center">
-          <div className="max-w-2xl mx-auto space-y-6">
+          <div className="mx-auto max-w-2xl space-y-6">
             <div className="space-y-3">
-              <h3 className="text-xl md:text-2xl text-foreground">
+              <h3 className="text-xl text-foreground md:text-2xl">
                 Worried about the budget? Let&apos;s still talk.
               </h3>
               <p className="text-muted-foreground">

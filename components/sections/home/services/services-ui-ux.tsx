@@ -45,11 +45,11 @@ export const Connect = () => {
       ],
       {
         repeat: Number.POSITIVE_INFINITY,
-      }
+      },
     );
   }, [animate]);
   return (
-    <section className="relative mx-auto mt-4 max-w-5xl  ">
+    <section className="relative mx-auto mt-4 max-w-5xl">
       <HighlightGroup className="group h-full">
         <div
           className="group/item h-full md:col-span-6 lg:col-span-12"
@@ -59,7 +59,7 @@ export const Connect = () => {
             <div className="relative z-20 h-full overflow-hidden">
               <DotPattern
                 className={cn(
-                  "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
+                  "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
                 )}
               />
               <div className="flex justify-center">
@@ -68,7 +68,7 @@ export const Connect = () => {
                     className="relative mx-auto h-[270px] w-[300px] md:h-[270px] md:w-[300px]"
                     ref={scope}
                   >
-                    <small className="absolute left-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2" />
+                    <small className="absolute top-1/2 left-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2" />
                     <div
                       id="next-js"
                       className="absolute bottom-12 left-10 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
@@ -77,19 +77,19 @@ export const Connect = () => {
                     </div>
                     <div
                       id="react-js"
-                      className="absolute left-2 top-20 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
+                      className="absolute top-20 left-2 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
                     >
                       UI Design
                     </div>
                     <div
                       id="typescript"
-                      className="absolute bottom-20 right-1 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
+                      className="absolute right-1 bottom-20 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
                     >
                       Testing & Iteration
                     </div>
                     <div
                       id="javascript"
-                      className="absolute right-12 top-10 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
+                      className="absolute top-10 right-12 rounded-3xl border border-slate-400 bg-slate-200 px-2 py-1.5 text-xs opacity-50 dark:border-slate-600 dark:bg-slate-800"
                     >
                       Wireframing
                     </div>

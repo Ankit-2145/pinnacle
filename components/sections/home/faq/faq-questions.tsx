@@ -15,16 +15,16 @@ interface AccordionItemProps {
 const AccordionItem = memo<AccordionItemProps>(
   ({ question, answer, isOpen, onClick }) => {
     return (
-      <div className="font-workSans border-b border-muted">
+      <div className="border-b border-muted font-workSans">
         <button
-          className="flex justify-between items-center w-full py-4 text-left focus:outline-none cursor-pointer"
+          className="flex w-full cursor-pointer items-center justify-between py-4 text-left focus:outline-none"
           onClick={onClick}
           aria-expanded={isOpen}
         >
-          <span className="text-foreground text-base">{question}</span>
+          <span className="text-base text-foreground">{question}</span>
           <ChevronDown
-            className={`w-5 h-5 transition-transform duration-300 text-muted-foreground ${
-              isOpen ? "transform rotate-180" : ""
+            className={`h-5 w-5 text-muted-foreground transition-transform duration-300 ${
+              isOpen ? "rotate-180 transform" : ""
             }`}
           />
         </button>
@@ -40,13 +40,13 @@ const AccordionItem = memo<AccordionItemProps>(
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <div className="pb-2 text-muted-foreground text-sm">{answer}</div>
+              <div className="pb-2 text-sm text-muted-foreground">{answer}</div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
     );
-  }
+  },
 );
 
 AccordionItem.displayName = "AccordionItem";
@@ -59,8 +59,8 @@ export const FAQQuestions = () => {
   }, []);
 
   return (
-    <div className="w-full ">
-      <div className=" overflow-hidden">
+    <div className="w-full">
+      <div className="overflow-hidden">
         <AnimatePresence initial={false}>
           {faqs.map((faq, index) => (
             <motion.div

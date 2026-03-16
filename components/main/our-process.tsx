@@ -3,18 +3,18 @@ import ProcessCards from "@/components/sections/home/process/process-cards";
 
 export const OurProcess = () => {
   return (
-    <section className="font-workSans py-24 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:justify-between items-start">
-        <div className="max-w-sm md:max-w-lg lg:max-w-xl text-2xl md:text-4xl text-left text-foreground tracking-wide mb-4">
+    <section className="px-4 py-24 font-workSans">
+      <div className="mx-auto flex max-w-6xl flex-col items-start lg:flex-row lg:justify-between">
+        <div className="mb-4 max-w-sm text-left text-2xl tracking-wide text-foreground md:max-w-lg md:text-4xl lg:max-w-xl">
           <h2>How We Turn Your Idea Into Something That Works</h2>
-          <p className="max-w-sm lg:max-w-md text-muted-foreground text-base pt-4">
+          <p className="max-w-sm pt-4 text-base text-muted-foreground lg:max-w-md">
             We listen, Plan, design, build, test, break, fix, and somehow make
             it live.
           </p>
         </div>
         <ProcessPillars />
       </div>
-      <div className="pt-16 max-w-6xl mx-4 lg:mx-0 2xl:mx-auto">
+      <div className="mx-4 max-w-6xl pt-16 lg:mx-0 2xl:mx-auto">
         <ProcessCards />
       </div>
     </section>

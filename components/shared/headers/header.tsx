@@ -13,17 +13,17 @@ export const Header = ({ heading, subHeading }: headerProps) => {
           "absolute inset-0",
           "[background-size:40px_40px]",
           "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]"
+          "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
         )}
       />
       {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-background"></div>
-      <div className="flex justify-center items-center h-full z-10">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="z-10 flex h-full items-center justify-center">
         <div className="text-center">
-          <h1 className="text-5xl font-medium text-foreground tracking-wide">
+          <h1 className="text-5xl font-medium tracking-wide text-foreground">
             {heading}
           </h1>
-          <p className="max-w-lg text-muted-foreground text-base pt-4">
+          <p className="max-w-lg pt-4 text-base text-muted-foreground">
             {subHeading}
           </p>
         </div>

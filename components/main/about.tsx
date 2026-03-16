@@ -4,11 +4,11 @@ import { AppPrimaryButton } from "@/components/shared/app-button";
 
 export const About = () => {
   return (
-    <section className="font-workSans py-24 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between gap-8">
+    <section className="px-4 py-24 font-workSans">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-col justify-between gap-8 lg:flex-row">
           <div>
-            <h2 className="text-lg text-foreground tracking-wide uppercase">
+            <h2 className="text-lg tracking-wide text-foreground uppercase">
               We don&apos;t just design.
               <br />
               we deconstruct problems.
@@ -22,7 +22,7 @@ export const About = () => {
             />
           </div>
           <div className="max-w-2xl">
-            <p className="text-base text-left text-muted-foreground">
+            <p className="text-left text-base text-muted-foreground">
               <span className="text-foreground">
                 At Pinnacle, we craft digital experiences—not just websites.
               </span>{" "}

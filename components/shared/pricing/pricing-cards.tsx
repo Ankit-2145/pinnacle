@@ -10,41 +10,40 @@ export const PricingCards = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center w-full mx-auto pt-16">
-        <div className="flex flex-col lg:flex-row justify-between flex-wrap max-w-6xl gap-8">
+      <div className="mx-auto flex w-full items-center justify-center pt-16">
+        <div className="flex max-w-6xl flex-col flex-wrap justify-between gap-8 lg:flex-row">
           {pricingPlans.map((plan, index) => (
             <MagicCard
               key={index}
               gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
-              className="overflow-hidden flex-1 rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
+              className="flex-1 overflow-hidden rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
             >
-              <div className="p-[30px] flex flex-col h-full gap-6 justify-between font-workSans">
+              <div className="flex h-full flex-col justify-between gap-6 p-[30px] font-workSans">
                 <div className="flex flex-col gap-6">
-                  <div className="p-0 flex flex-col gap-4">
-                    <div className="font-medium text-xl leading-5 ">
+                  <div className="flex flex-col gap-4 p-0">
+                    <div className="text-xl leading-5 font-medium">
                       {plan.title}{" "}
                     </div>
-                    <p className="opacity-80 font-normal text-sm leading-[22px]">
+                    <p className="text-sm leading-[22px] font-normal opacity-80">
                       {plan.description}
                     </p>
-                    <div className="font-normal text-lg leading-3">
+                    <div className="text-lg leading-3 font-normal">
                       <span>Starting at </span>
-                      <span className="font-medium text-2xl leading-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">
+                      <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-2xl leading-4 font-medium text-transparent">
                         ₹{plan.priceINR}/-
                       </span>
                     </div>
                   </div>
                   <hr />
 
-                  <div className="flex flex-col h-full justify-between">
+                  <div className="flex h-full flex-col justify-between">
                     {plan.features.map((feature, featureIndex) => (
                       <div
                         key={featureIndex}
                         className="flex items-start gap-1.5 py-2"
                       >
-                        <CheckIcon className="w-[15px] h-[15px]" />
-                        <span className="font-normal text-sm leading-[15.4px]">
+                        <CheckIcon className="h-[15px] w-[15px]" />
+                        <span className="text-sm leading-[15.4px] font-normal">
                           {feature}
                         </span>
                       </div>
@@ -56,7 +55,7 @@ export const PricingCards = () => {
           ))}
         </div>
       </div>
-      <p className="mt-4 max-w-4xl mx-auto text-center">
+      <p className="mx-auto mt-4 max-w-4xl text-center">
         * In addition to our packages, we also offer project consultancy and
         custom work at an hourly rate to meet unique business needs.
       </p>

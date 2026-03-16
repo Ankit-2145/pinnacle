@@ -50,40 +50,39 @@ export const ServicesCard = () => {
   }));
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 font-workSans">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="mx-auto w-full max-w-6xl px-4 font-workSans sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <Card
             key={service.id}
-            className="group relative overflow-hidden transition-all duration-300 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] hover:translate-y-[-4px] border-0 flex flex-col"
+            className="group relative flex flex-col overflow-hidden border-0 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all duration-300 hover:translate-y-[-4px] dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
           >
-            <CardHeader className="pb-3 pt-6">
-              <div className="flex items-start gap-3 mb-3">
+            <CardHeader className="pt-6 pb-3">
+              <div className="mb-3 flex items-start gap-3">
                 <CardTitle
                   className={`text-xl ${service.textColor} font-spaceGrotesk font-medium`}
                 >
                   {service.title}
                 </CardTitle>
               </div>
-              <CardDescription className="text-sm text-muted-foreground mt-2">
+              <CardDescription className="mt-2 text-sm text-muted-foreground">
                 {service.description}
               </CardDescription>
             </CardHeader>
 
-            <CardContent className="pb-3 flex-grow">
+            <CardContent className="flex-grow pb-3">
               <div className="space-y-3">
-                <h4 className="font-semibold text-sm text-foreground">
+                <h4 className="text-sm font-semibold text-foreground">
                   What we offer:
                 </h4>
                 <ul className="space-y-1.5">
                   {service.offerings.map((offering, index) => (
                     <li
                       key={index}
-                      className="text-sm text-muted-foreground flex items-start gap-2"
+                      className="flex items-start gap-2 text-sm text-muted-foreground"
                     >
                       <div
-                        className={`w-1.5 h-1.5 rounded-full ${service.color} mt-1.5 flex-shrink-0`}
+                        className={`h-1.5 w-1.5 rounded-full ${service.color} mt-1.5 flex-shrink-0`}
                       />
                       <span>{offering}</span>
                     </li>

@@ -8,9 +8,9 @@ import {
 
 export const OurServices = () => {
   return (
-    <section className="font-workSans py-24 px-4">
+    <section className="px-4 py-24 font-workSans">
       <div>
-        <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
+        <div className="mx-auto max-w-6xl text-center text-2xl tracking-wide text-foreground md:text-4xl">
           Crafting Digital{" "}
           <PointerHighlight
             rectangleClassName="border-2 border-brand-blue dark:border-blue-500"
@@ -18,7 +18,7 @@ export const OurServices = () => {
           >
             <span className="relative z-10">Excellence</span>
           </PointerHighlight>
-          <p className="text-muted-foreground text-base pt-4">
+          <p className="pt-4 text-base text-muted-foreground">
             From sleek websites to robust applications <br />— here&apos;s how
             we help brands grow.
           </p>
@@ -29,9 +29,9 @@ export const OurServices = () => {
       </div>
       {/* Call to Action */}
       <div className="mt-20 text-center">
-        <div className="max-w-xl mx-auto space-y-6">
+        <div className="mx-auto max-w-xl space-y-6">
           <div className="space-y-3">
-            <h3 className="text-xl md:text-2xl text-foreground">
+            <h3 className="text-xl text-foreground md:text-2xl">
               Believe it or not, that wasn&apos;t everything.
             </h3>
             <p className="text-muted-foreground">

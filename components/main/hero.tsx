@@ -13,12 +13,12 @@ export const Hero = () => {
   const springOptions = { bounce: 0.1 };
   return (
     <>
-      <section className="font-workSans py-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
+      <section className="px-4 py-24 font-workSans">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex flex-col items-start justify-between gap-8 lg:flex-row">
             {/* Left column: Main heading and subheading */}
             <div className="space-y-4 text-left font-spaceGrotesk">
-              <h1 className="text-3xl md:text-5xl text-foreground tracking-wide uppercase">
+              <h1 className="text-3xl tracking-wide text-foreground uppercase md:text-5xl">
                 {/* Animated text for main heading */}
                 We&apos;re Building,
                 <br /> Cool Experiences
@@ -35,11 +35,11 @@ export const Hero = () => {
             </div>
 
             {/* Right column: Description and CTA buttons */}
-            <div className="flex flex-col gap-4 max-w-sm">
+            <div className="flex max-w-sm flex-col gap-4">
               {/* Animated description text */}
               <TextAnimate
                 as="p"
-                className="text-base text-left text-muted-foreground"
+                className="text-left text-base text-muted-foreground"
                 animation="slideLeft"
                 by="word"
               >
@@ -70,7 +70,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* Velustro Gradient Animation */}
-        <div className="mt-10 max-w-6xl mx-auto h-64 md:h-96 overflow-hidden rounded-md">
+        <div className="mx-auto mt-10 h-64 max-w-6xl overflow-hidden rounded-md md:h-96">
           <Iridescence
             color={[1, 1, 1]}
             mouseReact={false}

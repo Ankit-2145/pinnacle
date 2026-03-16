@@ -36,7 +36,7 @@ const messages: Message[] = [
 
 export const ProcessChat = () => {
   return (
-    <div className="p-4 h-full flex flex-col mt-4 font-workSans">
+    <div className="mt-4 flex h-full flex-col p-4 font-workSans">
       <div className="flex-1 space-y-3 overflow-hidden">
         {messages.map((message, index) => (
           <motion.div
@@ -70,8 +70,8 @@ export const ProcessChat = () => {
                 }}
                 viewport={{ once: true }}
               >
-                <Avatar className="w-6 h-6 bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 flex-shrink-0">
-                  <AvatarFallback className="bg-gray-100 border border-brand-blue text-brand-blue text-xs font-semibold">
+                <Avatar className="h-6 w-6 flex-shrink-0 bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600">
+                  <AvatarFallback className="border border-brand-blue bg-gray-100 text-xs font-semibold text-brand-blue">
                     P
                   </AvatarFallback>
                 </Avatar>
@@ -79,10 +79,10 @@ export const ProcessChat = () => {
             )}
 
             <motion.div
-              className={`max-w-[80%] px-3 py-2 rounded-2xl text-xs leading-relaxed ${
+              className={`max-w-[80%] rounded-2xl px-3 py-2 text-xs leading-relaxed ${
                 message.sender === "user"
-                  ? "bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 text-white rounded-br-md"
-                  : "bg-gray-100 text-gray-800 rounded-bl-md"
+                  ? "rounded-br-md bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 text-white"
+                  : "rounded-bl-md bg-gray-100 text-gray-800"
               }`}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -107,8 +107,8 @@ export const ProcessChat = () => {
                 }}
                 viewport={{ once: true }}
               >
-                <Avatar className="w-6 h-6 bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 flex-shrink-0">
-                  <AvatarFallback className="bg-gray-100 border border-brand-blue text-brand-blue text-xs font-semibold">
+                <Avatar className="h-6 w-6 flex-shrink-0 bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600">
+                  <AvatarFallback className="border border-brand-blue bg-gray-100 text-xs font-semibold text-brand-blue">
                     U
                   </AvatarFallback>
                 </Avatar>

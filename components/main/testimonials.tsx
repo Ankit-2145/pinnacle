@@ -2,11 +2,11 @@ import { TestimonialsCards } from "@/components/sections/home/testimonials/testi
 
 export const Testimonials = () => {
   return (
-    <section className="font-workSans py-24 px-4">
+    <section className="px-4 py-24 font-workSans">
       <div>
-        <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
+        <div className="mx-auto max-w-6xl text-center text-2xl tracking-wide text-foreground md:text-4xl">
           <h1>Turns Out, People Like Working With Us</h1>
-          <p className="text-muted-foreground text-base pt-4">
+          <p className="pt-4 text-base text-muted-foreground">
             Because delivering great work isn&apos;t optional — it&apos;s
             expected.
           </p>

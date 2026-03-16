@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   return (
-    <main className="max-w-6xl mx-auto px-4 font-workSans">
+    <main className="mx-auto max-w-6xl px-4 font-workSans">
       <div className="mt-10 h-64 overflow-hidden">
         <Header
           heading="Ready When You Are"

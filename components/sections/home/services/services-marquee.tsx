@@ -62,13 +62,13 @@ const WebCard = ({
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01]",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10]"
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10]",
       )}
     >
       <div className="flex flex-row items-center gap-2">
         <img width="20" height="20" alt={technologyName} src={technologyLogo} />
         <div className="flex flex-col">
-          <figcaption className="text-sm font-medium text-muted-foreground dark:text-white font-workSans">
+          <figcaption className="font-workSans text-sm font-medium text-muted-foreground dark:text-white">
             {technologyName}
           </figcaption>
         </div>
@@ -79,7 +79,7 @@ const WebCard = ({
 
 export const MarqueeVertical = () => {
   return (
-    <div className="relative flex h-[210px] w-full flex-row items-center justify-center overflow-hidden pointer-events-none">
+    <div className="pointer-events-none relative flex h-[210px] w-full flex-row items-center justify-center overflow-hidden">
       <Marquee vertical className="[--duration:20s]">
         {firstRow.map((review) => (
           <WebCard

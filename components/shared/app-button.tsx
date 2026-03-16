@@ -27,22 +27,22 @@ export const AppPrimaryButton = ({
     <Link href={href}>
       <Button
         className={cn(
-          "group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2",
-          className
+          "group mr-2 mb-2 rounded-lg bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-blue-400/50 hover:bg-gradient-to-br dark:shadow-lg dark:shadow-blue-800/80",
+          className,
         )}
       >
         <span className="relative overflow-hidden">
-          <div className="absolute origin-bottom transition duration-[1.125s] [transform:translateX(-150%)_skewX(9deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+          <div className="absolute origin-bottom [transform:translateX(-150%)_skewX(9deg)] transition duration-[1.125s] group-hover:[transform:translateX(0)_skewX(0deg)]">
             {label}
           </div>
-          <div className="transition duration-[1.125s] [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(9deg)]">
+          <div className="[transform:translateX(0%)_skewX(0deg)] transition duration-[1.125s] group-hover:[transform:translateX(150%)_skewX(9deg)]">
             {label}
           </div>
         </span>
         <Icon
           className={cn(
-            "h-4 w-4 group-hover:translate-x-1 transition-transform",
-            iconClassName
+            "h-4 w-4 transition-transform group-hover:translate-x-1",
+            iconClassName,
           )}
         />
       </Button>
@@ -56,12 +56,12 @@ export const AppSecondaryButton = ({
 }: appSecondaryButtonProps) => {
   return (
     <Link href={href}>
-      <Button className="group text-blue-500 dark:text-blue-500 bg-transparent hover:bg-transparent border border-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+      <Button className="group mr-2 mb-2 rounded-lg border border-blue-500 bg-transparent px-5 py-2.5 text-center text-sm font-medium text-blue-500 hover:bg-transparent dark:text-blue-500">
         <div className="relative overflow-hidden">
-          <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+          <p className="duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:-translate-y-7">
             {label}
           </p>
-          <p className="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+          <p className="absolute top-7 left-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:top-0">
             {label}
           </p>
         </div>

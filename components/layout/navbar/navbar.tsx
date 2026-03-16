@@ -69,22 +69,22 @@ export const Navbar = () => {
     <nav
       className={cn(
         "sticky top-0 z-50 w-full bg-background transition-all duration-300 ease-in-out",
-        isVisible ? "translate-y-0" : "-translate-y-full"
+        isVisible ? "translate-y-0" : "-translate-y-full",
       )}
     >
-      <div className="flex h-16 max-w-7xl mx-auto items-center justify-between px-4">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
         <Link
           href="/"
           className="flex items-center space-x-2 transition-opacity hover:opacity-80"
         >
-          <span className="text-xl font-semibold tracking-tight bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-xl font-semibold tracking-tight text-transparent">
             Pinnacle
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden xl:flex items-center space-x-8 font-workSans">
+        <div className="hidden items-center space-x-8 font-workSans xl:flex">
           {navItems.map((item) => {
             const isActive =
               (pathname === "/" && item.href === "/") ||
@@ -96,8 +96,8 @@ export const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  "relative px-4 py-2 text-sm font-normal text-muted-foreground transition-colors hover:text-foreground group",
-                  isActive && "text-foreground"
+                  "group relative px-4 py-2 text-sm font-normal text-muted-foreground transition-colors hover:text-foreground",
+                  isActive && "text-foreground",
                 )}
               >
                 {item.name}
@@ -110,7 +110,7 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop Actions */}
-        <div className="hidden xl:flex items-center space-x-3">
+        <div className="hidden items-center space-x-3 xl:flex">
           <ModeToggle />
           <CTAButton />
         </div>
@@ -126,9 +126,9 @@ export const Navbar = () => {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px] p-4">
-              <div className="flex flex-col space-y-4 mt-8">
-                <div className="flex items-center space-x-2 pb-4 border-b">
+            <SheetContent side="left" className="w-[300px] p-4 sm:w-[400px]">
+              <div className="mt-8 flex flex-col space-y-4">
+                <div className="flex items-center space-x-2 border-b pb-4">
                   <span className="text-xl font-bold tracking-tight">
                     Pinnacle
                   </span>
@@ -146,8 +146,8 @@ export const Navbar = () => {
                         key={item.name}
                         href={item.href}
                         className={cn(
-                          "relative px-4 py-2 text-sm font-normal text-muted-foreground transition-colors hover:text-foreground group",
-                          isActive && "text-foreground"
+                          "group relative px-4 py-2 text-sm font-normal text-muted-foreground transition-colors hover:text-foreground",
+                          isActive && "text-foreground",
                         )}
                         onClick={() => setIsOpen(false)}
                       >

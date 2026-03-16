@@ -12,18 +12,18 @@ export const ProcessPillars = () => {
   ];
 
   return (
-    <div className="flex items-end gap-2 pointer-events-none my-16 mx-auto lg:mx-0 lg:my-0">
+    <div className="pointer-events-none mx-auto my-16 flex items-end gap-2 lg:mx-0 lg:my-0">
       {pillars.map((pillar, index) => (
         <div
           key={pillar.label}
-          className="flex flex-col border border-gray-950/[.1] dark:border-gray-50/[.1] rounded-lg h-30 w-14 md:w-16 lg:w-20"
+          className="flex h-30 w-14 flex-col rounded-lg border border-gray-950/[.1] md:w-16 lg:w-20 dark:border-gray-50/[.1]"
         >
           {index < 4 && (
-            <div className="bg-[url(/dashed-light.svg)] dark:bg-[url(/dashed-dark.svg)] h-full rounded-lg"></div>
+            <div className="h-full rounded-lg bg-[url(/dashed-light.svg)] dark:bg-[url(/dashed-dark.svg)]"></div>
           )}
           <motion.div
             className={`bg-gradient-to-t from-blue-400 via-blue-500 to-blue-600 ${
-              index < 4 ? "rounded-b-lg" : "rounded-lg h-full"
+              index < 4 ? "rounded-b-lg" : "h-full rounded-lg"
             } ${pillar.height}`}
             initial={{ scaleY: 0 }}
             whileInView={{ scaleY: 1 }}
@@ -36,16 +36,16 @@ export const ProcessPillars = () => {
             style={{ transformOrigin: "bottom" }}
           >
             <motion.p
-              className={`text-center font-spaceGrotesk font-medium text-sm text-white ${
+              className={`text-center font-spaceGrotesk text-sm font-medium text-white ${
                 index === 0
                   ? "pt-2"
                   : index === 1
-                  ? "pt-4"
-                  : index === 2
-                  ? "pt-6"
-                  : index === 3
-                  ? "pt-8"
-                  : "pt-10"
+                    ? "pt-4"
+                    : index === 2
+                      ? "pt-6"
+                      : index === 3
+                        ? "pt-8"
+                        : "pt-10"
               }`}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

@@ -30,21 +30,21 @@ export default function StatsCounter() {
 
   return (
     <div
-      className="flex flex-col lg:flex-row-reverse justify-between gap-8 mt-24"
+      className="mt-24 flex flex-col justify-between gap-8 lg:flex-row-reverse"
       ref={ref}
     >
       <div className="lg:self-center">
-        <h2 className="text-lg text-foreground tracking-wide uppercase">
+        <h2 className="text-lg tracking-wide text-foreground uppercase">
           Our Journey So Far
         </h2>
       </div>
       <div className="grid grid-cols-3">
         {stats.map((stat, index) => (
           <div key={index} className="flex flex-col">
-            <div className="h-20 flex items-end">
+            <div className="flex h-20 items-end">
               {(inView || hasAnimated) && (
                 <div className="flex items-baseline border-t">
-                  <span className="text-4xl tabular-nums leading-none pt-2">
+                  <span className="pt-2 text-4xl leading-none tabular-nums">
                     <CountUp
                       start={0}
                       end={stat.value}
@@ -54,11 +54,11 @@ export default function StatsCounter() {
                       preserveValue={true}
                     />
                   </span>
-                  <span className="text-2xl lg:text-4xl ml-1">+</span>
+                  <span className="ml-1 text-2xl lg:text-4xl">+</span>
                 </div>
               )}
             </div>
-            <span className="text-base font-SpaceGrotesk mt-2">
+            <span className="font-SpaceGrotesk mt-2 text-base">
               {stat.label}
             </span>
           </div>

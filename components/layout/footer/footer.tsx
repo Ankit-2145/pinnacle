@@ -15,7 +15,7 @@ export function Footer({
   companyInfo = COMPANY_INFO,
 }: FooterProps) {
   return (
-    <footer className="bg-background font-workSans px-4">
+    <footer className="bg-background px-4 font-workSans">
       <div className="mx-auto max-w-6xl">
         {/* Main Footer Content */}
         <div className="py-16">
@@ -32,7 +32,7 @@ export function Footer({
 
               {/* Social Links */}
               <div className="mt-8">
-                <h3 className="text-sm font-medium uppercase tracking-wider text-foreground">
+                <h3 className="text-sm font-medium tracking-wider text-foreground uppercase">
                   Follow Us
                 </h3>
                 <SocialLinks links={socialLinks} />

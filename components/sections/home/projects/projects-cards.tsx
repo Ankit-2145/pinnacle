@@ -38,14 +38,13 @@ const getTechIcon = (tech: string) => {
 export const ProjectsCards = () => {
   const springOptions = { bounce: 0.1 };
   return (
-    <div className="max-w-6xl mx-auto pt-16 px-4 lg:px-0 font-workSans">
+    <div className="mx-auto max-w-6xl px-4 pt-16 font-workSans lg:px-0">
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         {projects.slice(0, 4).map((project) => (
           <div
             key={project.id}
-            className="group rounded-xl overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] transition-all duration-300 cursor-pointer"
+            className="group cursor-pointer overflow-hidden rounded-xl shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] transition-all duration-300 dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]"
           >
             {/* Image Section */}
             <div className="relative h-72 overflow-hidden">
@@ -53,13 +52,13 @@ export const ProjectsCards = () => {
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               {/* Category Badge - Top */}
               <div className="absolute top-4 left-4 z-10">
                 <Badge
                   variant="secondary"
-                  className="bg-background/90 text-foreground backdrop-blur-sm border border-border/50 shadow-sm"
+                  className="border border-border/50 bg-background/90 text-foreground shadow-sm backdrop-blur-sm"
                 >
                   {project.category}
                 </Badge>
@@ -70,24 +69,24 @@ export const ProjectsCards = () => {
             <div className="p-6">
               {/* Title and Client */}
               <div className="mb-3">
-                <h3 className="text-xl font-semibold mb-1 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="mb-1 text-xl font-semibold text-foreground transition-colors group-hover:text-primary">
                   {project.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm leading-relaxed text-muted-foreground">
                 {project.description}
               </p>
               {/* Technologies */}
-              <div className="flex flex-wrap gap-2 my-4">
+              <div className="my-4 flex flex-wrap gap-2">
                 {project.technologies.map((tech) => {
                   const techIcon = getTechIcon(tech);
                   return (
                     <Badge
                       key={tech}
                       variant="outline"
-                      className="text-xs flex items-center gap-1.5 px-2.5 py-1"
+                      className="flex items-center gap-1.5 px-2.5 py-1 text-xs"
                     >
                       {techIcon ? (
                         <Image
@@ -95,10 +94,10 @@ export const ProjectsCards = () => {
                           alt={`${tech} icon`}
                           width={12}
                           height={12}
-                          className="w-4 h-4"
+                          className="h-4 w-4"
                         />
                       ) : (
-                        <Code2 className="w-4 h-4" />
+                        <Code2 className="h-4 w-4" />
                       )}
                       <span>{tech}</span>
                     </Badge>
@@ -118,8 +117,8 @@ export const ProjectsCards = () => {
                     actionArea="global"
                     range={200}
                   >
-                    <Button className="group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      View Live <ExternalLink className="w-4 h-4" />
+                    <Button className="group rounded-lg bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-blue-400/50 hover:bg-gradient-to-br dark:shadow-lg dark:shadow-blue-800/80">
+                      View Live <ExternalLink className="h-4 w-4" />
                     </Button>
                   </Magnetic>
                 </a>
@@ -130,8 +129,8 @@ export const ProjectsCards = () => {
                     actionArea="global"
                     range={200}
                   >
-                    <Button className="group text-blue-500 dark:text-blue-500 bg-transparent hover:bg-transparent border border-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                      View Case Study <Book className="w-4 h-4" />
+                    <Button className="group rounded-lg border border-blue-500 bg-transparent px-5 py-2.5 text-center text-sm font-medium text-blue-500 hover:bg-transparent dark:text-blue-500">
+                      View Case Study <Book className="h-4 w-4" />
                     </Button>
                   </Magnetic>
                 </Link>

@@ -35,7 +35,7 @@ export function ProcessLaunch() {
         <span>📈 Real-time monitoring and uptime checks activated</span>
       </AnimatedSpan>
 
-      <TypingAnimation delay={4000} className="text-white my-2">
+      <TypingAnimation delay={4000} className="my-2 text-white">
         Don&apos;t worry, We&apos;re here for post-launch support. Always.
       </TypingAnimation>
     </Terminal>

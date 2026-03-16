@@ -10,17 +10,14 @@ export const metadata: Metadata = {
 
 const Blog = () => {
   return (
-    <main className="max-w-6xl mx-auto px-4 font-workSans">
+    <main className="mx-auto max-w-6xl px-4 font-workSans">
       <div className="mt-10 h-64 overflow-hidden">
         <Header heading="Blogs" subHeading="We write our real experinces" />
       </div>
 
-      <section className="my-16 mx-auto font-nunito">
-        <p className="text-base text-muted-foreground leading-relaxed text-center">
-          No Blogs yet! We are working on it and will be live soon. Stay tuned
-          for updates and insights from our team of experts. We are excited to
-          share our knowledge and experiences with you through our upcoming blog
-          posts.
+      <section className="mx-auto my-16 font-nunito">
+        <p className="text-center text-base leading-relaxed font-semibold text-muted-foreground italic">
+          No Blogs yet!
         </p>
       </section>
     </main>

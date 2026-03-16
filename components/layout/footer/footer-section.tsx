@@ -8,7 +8,7 @@ interface FooterSectionProps {
 export function FooterSection({ title, links }: FooterSectionProps) {
   return (
     <div className="space-y-4">
-      <h3 className="text-sm font-medium uppercase tracking-wider text-foreground">
+      <h3 className="text-sm font-medium tracking-wider text-foreground uppercase">
         {title}
       </h3>
       <ul className="space-y-3">

@@ -49,7 +49,7 @@ const formSchema = z.object({
       {
         message:
           "Invalid phone number. Use a valid Indian 10-digit number or international format (e.g. +14155552671).",
-      }
+      },
     ),
   projectType: z.string(),
   message: z.string().min(10, {
@@ -81,7 +81,7 @@ export function ContactForm() {
     const formData = new FormData();
     formData.append(
       "access_key",
-      process.env.NEXT_PUBLIC_CONTACT_FORM_ACCESS_KEY as string
+      process.env.NEXT_PUBLIC_CONTACT_FORM_ACCESS_KEY as string,
     );
     Object.entries(values).forEach(([key, value]) => {
       if (value) formData.append(key, value);
@@ -103,20 +103,17 @@ export function ContactForm() {
       }
     } catch (error) {
       toast.error(
-        error instanceof Error ? error.message : "An unexpected error occurred"
+        error instanceof Error ? error.message : "An unexpected error occurred",
       );
     }
     setIsSubmitting(false);
   }
 
   return (
-    <div
-      className="w-full mx-auto text-left p-8 font-workSans bg-background shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]
-      dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)] rounded-xl"
-    >
+    <div className="mx-auto w-full rounded-xl bg-background p-8 text-left font-workSans shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.2),0px_1px_0px_0px_rgba(255,255,255,0.05),0px_0px_0px_1px_rgba(255,255,255,0.1)]">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 space-y-4 lg:space-y-0">
+          <div className="grid grid-cols-1 gap-4 space-y-4 lg:grid-cols-2 lg:space-y-0">
             <FormField
               control={form.control}
               name="name"
@@ -125,7 +122,7 @@ export function ContactForm() {
                   <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input
-                      className="w-full bg-transparent dark:bg-transparent border-0 border-b rounded-none text-foreground focus-visible:ring-0"
+                      className="w-full rounded-none border-0 border-b bg-transparent text-foreground focus-visible:ring-0 dark:bg-transparent"
                       placeholder="John Doe"
                       {...field}
                     />
@@ -143,7 +140,7 @@ export function ContactForm() {
                   <FormLabel>Email</FormLabel>
                   <FormControl>
                     <Input
-                      className="w-full bg-transparent dark:bg-transparent border-0 border-b rounded-none text-foreground focus-visible:ring-0"
+                      className="w-full rounded-none border-0 border-b bg-transparent text-foreground focus-visible:ring-0 dark:bg-transparent"
                       type="email"
                       placeholder="your@email.com"
                       {...field}
@@ -155,7 +152,7 @@ export function ContactForm() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 space-y-4 lg:space-y-0">
+          <div className="my-8 grid grid-cols-1 gap-4 space-y-4 lg:grid-cols-2 lg:space-y-0">
             <FormField
               control={form.control}
               name="phoneNumber"
@@ -164,7 +161,7 @@ export function ContactForm() {
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>
                     <Input
-                      className="w-full bg-transparent dark:bg-transparent border-0 border-b rounded-none text-foreground focus-visible:ring-0"
+                      className="w-full rounded-none border-0 border-b bg-transparent text-foreground focus-visible:ring-0 dark:bg-transparent"
                       type="tel"
                       inputMode="tel"
                       placeholder="+91 9876543210"
@@ -187,7 +184,7 @@ export function ContactForm() {
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
-                      <SelectTrigger className="w-full bg-transparent dark:bg-transparent border-0 border-b rounded-none text-foreground focus-visible:ring-0">
+                      <SelectTrigger className="w-full rounded-none border-0 border-b bg-transparent text-foreground focus-visible:ring-0 dark:bg-transparent">
                         <SelectValue placeholder="project Type" />
                       </SelectTrigger>
                       <SelectContent>
@@ -225,7 +222,7 @@ export function ContactForm() {
                 <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea
-                    className="w-full bg-transparent dark:bg-transparent border-0 border-b rounded-none text-foreground focus-visible:ring-0"
+                    className="w-full rounded-none border-0 border-b bg-transparent text-foreground focus-visible:ring-0 dark:bg-transparent"
                     placeholder="Write your message..."
                     rows={4}
                     {...field}
@@ -247,7 +244,7 @@ export function ContactForm() {
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
-                    <SelectTrigger className="w-full bg-transparent dark:bg-transparent border-0 border-b rounded-none text-foreground focus-visible:ring-0">
+                    <SelectTrigger className="w-full rounded-none border-0 border-b bg-transparent text-foreground focus-visible:ring-0 dark:bg-transparent">
                       <SelectValue placeholder="Select your Budget" />
                     </SelectTrigger>
                     <SelectContent>
@@ -281,7 +278,7 @@ export function ContactForm() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full lg:w-auto group text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            className="group mr-2 mb-2 w-full rounded-lg bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-blue-400/50 hover:bg-gradient-to-br lg:w-auto dark:shadow-lg dark:shadow-blue-800/80"
           >
             {isSubmitting ? (
               <>
@@ -290,10 +287,10 @@ export function ContactForm() {
               </>
             ) : (
               <span className="relative overflow-hidden">
-                <div className="absolute origin-bottom transition duration-[1.125s] [transform:translateX(-150%)_skewX(9deg)] group-hover:[transform:translateX(0)_skewX(0deg)]">
+                <div className="absolute origin-bottom [transform:translateX(-150%)_skewX(9deg)] transition duration-[1.125s] group-hover:[transform:translateX(0)_skewX(0deg)]">
                   Send Message
                 </div>
-                <div className="transition duration-[1.125s] [transform:translateX(0%)_skewX(0deg)] group-hover:[transform:translateX(150%)_skewX(9deg)]">
+                <div className="[transform:translateX(0%)_skewX(0deg)] transition duration-[1.125s] group-hover:[transform:translateX(150%)_skewX(9deg)]">
                   Send Message
                 </div>
               </span>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const Services = () => {
   return (
-    <main className="max-w-6xl mx-auto font-workSans">
+    <main className="mx-auto max-w-6xl font-workSans">
       <div className="mt-10 h-64 overflow-hidden">
         <Header
           heading="Our Services"

@@ -37,18 +37,18 @@ export const ProcessTimelineWorkflow = () => {
   const progress = ((currentStep + 1) / timelineSteps.length) * 100;
 
   return (
-    <div className="w-full h-full flex flex-col justify-center">
-      <div className="relative flex-1 flex flex-col justify-center p-4 max-w-4xl mx-auto w-full mt-4 lg:mt-0">
+    <div className="flex h-full w-full flex-col justify-center">
+      <div className="relative mx-auto mt-4 flex w-full max-w-4xl flex-1 flex-col justify-center p-4 lg:mt-0">
         <DotPattern
           className={cn(
-            "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+            "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]",
           )}
         />
 
         {/* Timeline with SVG */}
         <div className="relative">
           <svg
-            className="absolute hidden lg:block top-1/2 left-0 w-full h-2 -translate-y-1/2"
+            className="absolute top-1/2 left-0 hidden h-2 w-full -translate-y-1/2 lg:block"
             viewBox="0 0 100 8"
             preserveAspectRatio="none"
           >
@@ -94,17 +94,17 @@ export const ProcessTimelineWorkflow = () => {
           </svg>
 
           {/* Timeline Steps */}
-          <div className="relative flex flex-wrap gap-2 lg:gap-0 justify-between items-center pt-2">
+          <div className="relative flex flex-wrap items-center justify-between gap-2 pt-2 lg:gap-0">
             {timelineSteps.map((step, index) => {
               const isActive = index === currentStep;
               const isComplete = index < currentStep;
 
               return (
-                <div key={step.id} className="flex flex-col items-center group">
+                <div key={step.id} className="group flex flex-col items-center">
                   <motion.div
                     className={cn(
-                      "relative rounded-lg gap-1.5 px-2.5 py-1.5 flex items-center justify-center z-10 cursor-pointer will-change-transform",
-                      isActive || isComplete ? "bg-foreground" : "bg-none"
+                      "relative z-10 flex cursor-pointer items-center justify-center gap-1.5 rounded-lg px-2.5 py-1.5 will-change-transform",
+                      isActive || isComplete ? "bg-foreground" : "bg-none",
                     )}
                     initial={false}
                     animate={{
@@ -120,7 +120,7 @@ export const ProcessTimelineWorkflow = () => {
 
                     {isComplete && (
                       <motion.div
-                        className="absolute -top-1 -right-1 w-5 h-5 bg-emerald-400 rounded-full flex items-center justify-center text-white text-xs"
+                        className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400 text-xs text-white"
                         initial={{ scale: 0, rotate: -180 }}
                         animate={{ scale: 1, rotate: 0 }}
                         transition={{

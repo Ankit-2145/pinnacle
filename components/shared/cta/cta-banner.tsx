@@ -6,9 +6,9 @@ import Iridescence from "@/components/theme/iridescence";
 
 export const CTABanner = () => {
   return (
-    <div className="max-w-6xl mx-auto overflow-hidden rounded-lg relative border font-workSans h-fit">
+    <div className="relative mx-auto h-fit max-w-6xl overflow-hidden rounded-lg border font-workSans">
       {/* Text Content */}
-      <div className="relative h-full flex flex-col items-center justify-center">
+      <div className="relative flex h-full flex-col items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Iridescence
             color={[1, 1, 1]}
@@ -17,16 +17,16 @@ export const CTABanner = () => {
             speed={1.0}
           />
         </div>
-        <div className="z-10 backdrop-blur-sm bg-white/10 rounded-lg p-8 h-full w-full">
+        <div className="z-10 h-full w-full rounded-lg bg-white/10 p-8 backdrop-blur-sm">
           <h3 className="text-2xl font-medium text-black">
             Still figuring out how to build your website?
           </h3>
-          <p className="text-base max-w-xl mt-2 text-black">
+          <p className="mt-2 max-w-xl text-base text-black">
             You could spend another weekend Googling tutorials — or partner with
             a team that gets it right the first time. We&apos;re here to make it
             easier, faster, and better.
           </p>
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 items-center">
+          <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row">
             <AppPrimaryButton
               label="Ready to get yours?"
               href="/"

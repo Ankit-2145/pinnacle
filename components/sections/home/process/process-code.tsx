@@ -17,7 +17,7 @@ export const CodeBlockWithHeader = () => {
 `;
 
   return (
-    <div className="w-full mt-4">
+    <div className="mt-4 w-full">
       <CodeBlock>
         <CodeBlockCode code={code} language="tsx" />
       </CodeBlock>

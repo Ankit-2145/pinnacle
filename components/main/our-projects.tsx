@@ -2,11 +2,11 @@ import { ProjectsCards } from "@/components/sections/home/projects/projects-card
 
 export const OurProjects = () => {
   return (
-    <section className="font-workSans py-24 px-4">
+    <section className="px-4 py-24 font-workSans">
       <div>
-        <div className="max-w-6xl mx-auto text-2xl md:text-4xl text-center text-foreground tracking-wide">
+        <div className="mx-auto max-w-6xl text-center text-2xl tracking-wide text-foreground md:text-4xl">
           <h1>What We&apos;ve Actually Shipped</h1>
-          <p className="text-muted-foreground text-base pt-4">
+          <p className="pt-4 text-base text-muted-foreground">
             Not just Design mockups — real users, real deadlines, real launches.
           </p>
         </div>
