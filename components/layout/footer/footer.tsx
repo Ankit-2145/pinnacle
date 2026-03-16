@@ -1,7 +1,11 @@
 import { CompanyInfo } from "./company-info";
 import { FooterSection } from "./footer-section";
 import { SocialLinks } from "./social-links";
-import { COMPANY_INFO, FOOTER_SECTIONS, SOCIAL_LINKS } from "./footer-data";
+import {
+  COMPANY_INFO,
+  FOOTER_SECTIONS,
+  SOCIAL_LINKS,
+} from "@/data/footer-data";
 
 interface FooterProps {
   sections?: typeof FOOTER_SECTIONS;

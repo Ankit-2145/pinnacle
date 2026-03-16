@@ -14,7 +14,7 @@ export const OurProcess = () => {
         </div>
         <ProcessPillars />
       </div>
-      <div className="mx-4 max-w-6xl pt-16 lg:mx-0 2xl:mx-auto">
+      <div className="mx-auto max-w-6xl pt-16">
         <ProcessCards />
       </div>
     </section>

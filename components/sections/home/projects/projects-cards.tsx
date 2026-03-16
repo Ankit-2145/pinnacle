@@ -1,39 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Book, Code2, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Magnetic } from "@/components/ui/magnetic";
 import { projects } from "@/data/projects-data";
-
-// Technology image mapping
-const getTechIcon = (tech: string) => {
-  const iconMap: Record<string, string> = {
-    "Next.js": "/next-js.svg",
-    TypeScript: "/typescript.svg",
-    "Tailwind CSS": "/tailwind-css.svg",
-    Prisma: "/prisma.png",
-    NextAuth: "/nextauth.png",
-    Razorpay: "/razorpay.svg",
-    Zustand: "/zustand.svg",
-    React: "/react.svg",
-    "Node.js": "/nodejs-icon.svg",
-    MongoDB: "/mongodb-icon.svg",
-    PostgreSQL: "/postgresql.svg",
-    HTML: "/html.svg",
-    CSS: "/css.svg",
-    JavaScript: "/javascript.svg",
-    webpack: "/webpack.svg",
-    Vite: "vite.js.svg",
-    Flowbite: "/flowbite-logo.png",
-    "Framer Motion": "framer-motion.svg",
-    nextra: "/nextra.svg",
-  };
-
-  return iconMap[tech] || null;
-};
 
 export const ProjectsCards = () => {
   const springOptions = { bounce: 0.1 };
@@ -78,63 +50,23 @@ export const ProjectsCards = () => {
               <p className="text-sm leading-relaxed text-muted-foreground">
                 {project.description}
               </p>
-              {/* Technologies */}
-              <div className="my-4 flex flex-wrap gap-2">
-                {project.technologies.map((tech) => {
-                  const techIcon = getTechIcon(tech);
-                  return (
-                    <Badge
-                      key={tech}
-                      variant="outline"
-                      className="flex items-center gap-1.5 px-2.5 py-1 text-xs"
-                    >
-                      {techIcon ? (
-                        <Image
-                          src={techIcon || "/placeholder.svg"}
-                          alt={`${tech} icon`}
-                          width={12}
-                          height={12}
-                          className="h-4 w-4"
-                        />
-                      ) : (
-                        <Code2 className="h-4 w-4" />
-                      )}
-                      <span>{tech}</span>
-                    </Badge>
-                  );
-                })}
-              </div>
 
-              <div className="flex justify-between">
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Magnetic
+                  intensity={0.2}
+                  springOptions={springOptions}
+                  actionArea="global"
+                  range={200}
                 >
-                  <Magnetic
-                    intensity={0.2}
-                    springOptions={springOptions}
-                    actionArea="global"
-                    range={200}
-                  >
-                    <Button className="group rounded-lg bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-blue-400/50 hover:bg-gradient-to-br dark:shadow-lg dark:shadow-blue-800/80">
-                      View Live <ExternalLink className="h-4 w-4" />
-                    </Button>
-                  </Magnetic>
-                </a>
-                <Link href="/work">
-                  <Magnetic
-                    intensity={0.2}
-                    springOptions={springOptions}
-                    actionArea="global"
-                    range={200}
-                  >
-                    <Button className="group rounded-lg border border-blue-500 bg-transparent px-5 py-2.5 text-center text-sm font-medium text-blue-500 hover:bg-transparent dark:text-blue-500">
-                      View Case Study <Book className="h-4 w-4" />
-                    </Button>
-                  </Magnetic>
-                </Link>
-              </div>
+                  <Button className="group mt-6 rounded-lg bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-blue-400/50 hover:bg-gradient-to-br dark:shadow-lg dark:shadow-blue-800/80">
+                    View Live <ExternalLink className="h-4 w-4" />
+                  </Button>
+                </Magnetic>
+              </a>
             </div>
           </div>
         ))}
