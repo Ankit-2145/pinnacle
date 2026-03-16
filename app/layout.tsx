@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 
 import { Toaster } from "@/components/ui/sonner";
 import LenisProvider from "@/components/providers/lenis-provider";
+import { Navbar } from "@/components/layout/navbar/navbar";
+import { Footer } from "@/components/layout/footer/footer";
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -50,7 +52,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar />
             {children}
+            <Footer />
             <Toaster />
           </ThemeProvider>
         </LenisProvider>

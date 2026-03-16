@@ -41,7 +41,7 @@ const reviews = [
   },
   {
     name: "Prisma",
-    img: "./prisma.png",
+    img: "./prisma.svg",
   },
 ];
 
