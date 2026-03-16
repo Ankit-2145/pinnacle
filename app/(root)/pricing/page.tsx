@@ -50,7 +50,7 @@ const Pricing = () => {
               <div className="flex items-center justify-center gap-4">
                 <AppPrimaryButton
                   label="Book a Free Call"
-                  href="/contact"
+                  href="https://cal.com/pinnacle-smart-solutions-33"
                   icon={ArrowRight}
                 />
                 <AppSecondaryButton label="Drop a Message" href="/contact" />

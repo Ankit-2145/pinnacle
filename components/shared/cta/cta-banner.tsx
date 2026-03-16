@@ -29,7 +29,7 @@ export const CTABanner = () => {
           <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row">
             <AppPrimaryButton
               label="Ready to get yours?"
-              href="/"
+              href="https://cal.com/pinnacle-smart-solutions-33"
               icon={ChevronRight}
             />
           </div>

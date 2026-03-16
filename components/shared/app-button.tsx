@@ -24,7 +24,7 @@ export const AppPrimaryButton = ({
   iconClassName,
 }: appPrimaryButtonProps) => {
   return (
-    <Link href={href}>
+    <a href={href}>
       <Button
         className={cn(
           "group mr-2 mb-2 rounded-lg bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white shadow-lg shadow-blue-400/50 hover:bg-gradient-to-br dark:shadow-lg dark:shadow-blue-800/80",
@@ -46,7 +46,7 @@ export const AppPrimaryButton = ({
           )}
         />
       </Button>
-    </Link>
+    </a>
   );
 };
 

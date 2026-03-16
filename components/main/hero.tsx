@@ -50,7 +50,7 @@ export const Hero = () => {
               <div className="flex flex-wrap justify-start gap-4">
                 {/* Primary button */}
                 <AppPrimaryButton
-                  href="/contact"
+                  href="https://cal.com/pinnacle-smart-solutions-33"
                   label="Book a Free Call"
                   icon={ChevronRight}
                   iconClassName="group-hover:translate-x-0.5"
