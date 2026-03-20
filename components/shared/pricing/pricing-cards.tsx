@@ -30,7 +30,8 @@ export const PricingCards = () => {
                     <div className="text-lg leading-3 font-normal">
                       <span>Starting at </span>
                       <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-2xl leading-4 font-medium text-transparent">
-                        ₹{plan.priceINR}/-
+                        <span className="text-xs font-medium">INR</span>
+                        {plan.priceINR}/-
                       </span>
                     </div>
                   </div>
