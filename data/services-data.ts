@@ -1,5 +1,5 @@
 export interface Service {
-  id: number;
+  id: string;
   title: string;
   description: string;
   offerings: string[];
@@ -7,6 +7,14 @@ export interface Service {
   lightColor: string;
   textColor: string;
 }
+
+export const generateSlug = (title: string): string => {
+  return title
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
+};
 
 export const servicesData = [
   {

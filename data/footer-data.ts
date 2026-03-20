@@ -13,19 +13,28 @@ export const FOOTER_SECTIONS = [
   {
     title: "Services",
     links: [
-      { name: "Website Development", href: "/services/web-development" },
-      {
-        name: "E-commerce Development",
-        href: "/services/ecommerce-development",
-      },
+      { name: "Website Development", href: "/services/website-development" },
       { name: "CMS Development", href: "/services/cms-development" },
-      { name: "Custom Web Applications", href: "/services/custom-development" },
-      { name: "Mobile App Development", href: "/services/app-development" },
-      { name: "SEO & Digital Marketing", href: "/services/seo" },
-      { name: "UI/UX Design", href: "/services/ui-ux" },
-      { name: "Branding & Logo Design", href: "/services/branding" },
-      { name: "Website Maintenance", href: "/services/maintenance" },
-      { name: "Web Hosting", href: "/services/hosting" },
+      {
+        name: "Custom Web Applications",
+        href: "/services/web-app-development",
+      },
+      {
+        name: "Mobile App Development",
+        href: "/services/mobile-app-development",
+      },
+      {
+        name: "SEO & Digital Marketing",
+        href: "/services/seo-and-performance-optimization",
+      },
+      {
+        name: "Branding & Logo Design",
+        href: "/services/branding-and-creative-direction",
+      },
+      {
+        name: "Website Maintenance",
+        href: "/services/website-maintenance-and-support",
+      },
     ],
   },
   {
@@ -33,7 +42,6 @@ export const FOOTER_SECTIONS = [
     links: [
       { name: "About Us", href: "/about" },
       { name: "Our Work", href: "/work" },
-      { name: "Case Studies", href: "/case-studies" },
       { name: "Blog", href: "/blog" },
       { name: "Contact", href: "/contact" },
     ],

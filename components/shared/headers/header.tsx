@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 interface headerProps {
   heading: string;
-  subHeading: string;
+  subHeading?: string;
 }
 
 export const Header = ({ heading, subHeading }: headerProps) => {
