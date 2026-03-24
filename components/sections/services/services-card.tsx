@@ -9,17 +9,14 @@ import {
   Code,
   FileText,
   Sparkles,
-  ArrowRight,
 } from "lucide-react";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Service, servicesData } from "@/data/services-data";
 
 export const ServicesCard = () => {
@@ -39,11 +36,10 @@ export const ServicesCard = () => {
 
   // Convert to our service structure
   const services: Service[] = servicesData.map((service, index) => ({
-    id: index + 1,
+    id: (index + 1).toString(),
     title: service.title,
     description: service.description,
     offerings: service.offerings,
-    icon: iconMap[service.title],
     color: service.color,
     lightColor: service.lightColor,
     textColor: service.textColor,
