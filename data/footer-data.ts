@@ -2,8 +2,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const COMPANY_INFO = {
   name: "Pinnacle",
-  address:
-    "Flat No. B5, Bharat Apartment,\n Surya Vihar, Solan,\n Himachal Pradesh, India - 173212",
+  address: "Solan, Himachal Pradesh, India - 173212",
   email: "info.sspinnacle@gmail.com",
   phone: "+91 7277 55555 0",
   copyright: "Pinnacle Smart Solutions",
