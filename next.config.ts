@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/:path*",
         permanent: true,
       },
+      {
+        source: "/src/pages/learning.html",
+        destination: "/*",
+        permanent: true,
+      },
     ];
   },
 };
