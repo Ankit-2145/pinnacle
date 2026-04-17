@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/src/pages/learning.html",
-        destination: "/*",
+        destination: "/",
         permanent: true,
       },
     ];
