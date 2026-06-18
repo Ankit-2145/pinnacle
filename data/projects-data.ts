@@ -11,17 +11,17 @@ interface Project {
 }
 
 export const projects: Project[] = [
-  {
-    id: 1,
-    title: "Research Goal",
-    description:
-      "A full-featured Learning Management System (LMS) built with Next.js and Razorpay integration, enabling instructors to create courses, manage content, track learner progress, and issue certificates. Includes secure authentication, real-time payments, and a clean, responsive UI.",
-    slug: "research-goal",
-    image: "/research-goal.png",
-    category: "Education",
-    client: "Research Goal",
-    liveUrl: "https://www.researchgoal.com",
-  },
+  // {
+  //   id: 1,
+  //   title: "Research Goal",
+  //   description:
+  //     "A full-featured Learning Management System (LMS) built with Next.js and Razorpay integration, enabling instructors to create courses, manage content, track learner progress, and issue certificates. Includes secure authentication, real-time payments, and a clean, responsive UI.",
+  //   slug: "research-goal",
+  //   image: "/research-goal.png",
+  //   category: "Education",
+  //   client: "Research Goal",
+  //   liveUrl: "https://www.researchgoal.com",
+  // },
   {
     id: 2,
     title:
